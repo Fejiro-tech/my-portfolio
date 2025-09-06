@@ -1,0 +1,144 @@
+import { useState } from "react";
+
+export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState("");
+
+  // Handle form input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus("");
+
+    const response = await fetch("https://formspree.io/f/xgvkgwkv", {
+      // Use your unique Formspree URL
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      setStatus("Thank you for reaching out! I'll get back to you soon.");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      setStatus("Oops, something went wrong. Please try again later.");
+    }
+
+    setIsSubmitting(false);
+  };
+
+  return (
+    <section
+      id="contact"
+      className="bg-[#0a0a0e]
+     text-purple-100 min-h-screen px-4 py-14"
+    >
+      <div className="max-w-3xl mx-auto text-center py-10 px-4">
+        <h2 className="text-4xl font-bold mb-4">Contact Me</h2>
+        <p className="text-gray-300 mb-10 text-[16px] md:text-lg leading-relaxed ">
+          Interested in working together? Let's connect. Fill out the form below
+          or reach me directly through social media.
+        </p>
+
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            className="w-full p-3 rounded-md bg-[#252540] border border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-600"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full p-3 rounded-md bg-[#252540] border border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-600"
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+            className="w-full p-3 rounded-md bg-[#252540] border border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-600"
+          />
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="bg-gradient-to-r from-pink-600 to-[#52168a] text-white px-6 py-3 rounded-md font-bold hover:scale-105 transition-transform"
+          >
+            {isSubmitting ? "Sending..." : "Send Message"}
+          </button>
+        </form>
+
+        {status && (
+          <p
+            className={`mt-6 ${
+              status.includes("error")
+                ? "text-red-500 font-bold"
+                : "text-green-500 font-bold"
+            }`}
+          >
+            {status}
+          </p>
+        )}
+
+        {/* Social Icons */}
+        <div className="flex justify-center mt-10 space-x-6">
+          <a
+            href="https://github.com/Fejiro-tech"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="./github.svg"
+              alt="GitHub"
+              className="w-10 h-10 rounded-md hover:scale-110 transition-transform bg-white"
+            />
+          </a>
+          <a
+            href="https://linkedin.com/in/priscilliaosumaka"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="./linkedin.svg"
+              alt="LinkedIn"
+              className="w-10 h-10 rounded-md hover:scale-110 transition-transform bg-white"
+            />
+          </a>
+          <a
+            href="mailto:priscilliaosumaka@yahoo.com?subject=Interested%20in%20working%20with%20you&body=Hi%20Priscillia%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20I%27m%20interested%20in%20collaborating%20with%20you.%0A%0ARegards%2C%0A"
+            
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/mail.svg"
+              alt="Email"
+              className="w-10 h-10 rounded-md hover:scale-110 transition-transform bg-white"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}

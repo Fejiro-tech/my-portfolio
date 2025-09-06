@@ -1,0 +1,84 @@
+import backgroundImage from "../assets/bgPic.jpeg";
+import { motion } from "framer-motion";
+import { buttonStyle } from "./CustomButton.jsx";
+import icon from "../assets/arrow.svg";
+import ArrowIcon from "./ArrowIcon.jsx";
+
+
+export const bgStyle = {
+  backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)), url(${backgroundImage})`,
+  backgroundSize: "fit",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+
+  color: "black",
+};
+
+export default function Header({}) {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.6, // delay between each child animation
+      },
+    },
+  };
+
+  const childVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+  return (
+    <div
+      id="home"
+      style={bgStyle}
+      className="flex items-center min-h-screen"
+    >
+      <motion.div
+        className="mx-auto w-full max-w-[1050px] text-center"
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+      >
+        <motion.h1
+          className=" text-purple-100 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+          variants={childVariants}
+        >
+          Hi👋,
+          <br />
+          <motion.span variants={childVariants}>I'm Priscillia,</motion.span>
+          <br />
+          <motion.span variants={childVariants} className="text-pink-600">
+            A Sofware Developer.<br/>
+            I craft clean interfaces & code
+          </motion.span>
+        </motion.h1>
+
+        <motion.p
+          className="text-[#a1a1a1] text-base sm:text-lg md:text-xl mt-6"
+          variants={childVariants}
+        >
+          Front End Developer / JavaScript / React / Next.js / TypeScript
+        </motion.p>
+
+        <motion.div
+          className="flex justify-center mt-10"
+          variants={childVariants}
+        >
+          <a
+            href="#about"
+            style={buttonStyle}
+            className="px-6 py-3 font-bold rounded-full  flex flex-col  justify-center items-center gap-2 bg-pink-600 text-white hover:bg-pink-700 transition"
+          >
+            Learn about what I do
+            <ArrowIcon className="w-5 h-5" />
+          </a>
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+}
+
+// linear-gradient(to right, #ff69b4, #8a2be2)
