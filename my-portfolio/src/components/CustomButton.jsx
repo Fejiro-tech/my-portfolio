@@ -25,7 +25,7 @@ export default function CustomButton() {
             {isOpen ? (
               <X size={24} className="text-pink-600" />
             ) : (
-              <Menu size={34} className="text-pink-600 cursor-pointer" />
+              <Menu size={24} className="text-pink-600 cursor-pointer" />
             )}
           </button>
         </div>
@@ -83,7 +83,7 @@ export default function CustomButton() {
       {/* Sidebar Menu (Mobile)*/}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex lg:hidden">
-          {/* Optional overlay */}
+          {/* overlay */}
           <div
             className="absolute inset-0 backdrop-blur-sm sm:backdrop-blur-sm"
             onClick={() => setIsOpen(false)}
@@ -94,9 +94,9 @@ export default function CustomButton() {
             {/* Close button inside sidebar */}
             <button
               onClick={() => setIsOpen(false)}
-              className="text-5xl cursor-pointer text-pink-600 absolute top-2 right-2"
+              className="text-4xl cursor-pointer text-pink-600 absolute top-4 right-4"
             >
-              &times;
+              <X/>
             </button>
 
             <ul className="mt-20 pl-10 space-y-20">

@@ -43,7 +43,7 @@ export default function Header({}) {
         animate="show"
       >
         <motion.h1
-          className=" text-purple-100 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+          className=" text-purple-100 text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-extrabold leading-tight"
           variants={childVariants}
         >
           Hi👋,
@@ -81,4 +81,3 @@ export default function Header({}) {
   );
 }
 
-// linear-gradient(to right, #ff69b4, #8a2be2)

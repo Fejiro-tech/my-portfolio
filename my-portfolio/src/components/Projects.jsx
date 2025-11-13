@@ -1,18 +1,6 @@
 import project from "./ProjectData";
-import natoursImage from "../assets/natours.png";
-import movieImage from "../assets/movieapp2.png";
-import payrail from "../assets/payrail.png";
-import twitterImage from "../assets/twitter.png";
-import foodImage from "../assets/foodapp.png";
 import { buttonStyle } from "./CustomButton";
 
-const projectImages = [
-  natoursImage,
-  movieImage,
-  payrail,
-  twitterImage,
-  foodImage,
-];
 
 export default function Project() {
   return (
@@ -31,20 +19,19 @@ export default function Project() {
 
       <div
         className="max-w-7xl mx-auto flex overflow-x-auto space-x-10 
-                  lg:grid lg:grid-cols-3 lg:gap-8 hide-scrollbar p-6 rounded-2xl
+                  lg:grid lg:grid-cols-3 lg:gap-12 hide-scrollbar p-6 rounded-2xl
                 
       "
       >
-        {project.map((project, index) => (
+        {project.map(({ name, description, image, url, githubUrl }, index) => (
           <article
             key={index}
             className="bg-[#17171f] rounded-xl hover:shadow-lg duration-300 overflow-hidden flex flex-col p-4 mb-4 shadow-2xl hover:shadow-pink-200/50 hover:scale-105 transition-transform
-                 w-90 sm:w-96 flex-shrink-0 
-                 lg:w-auto lg:flex-shrink lg:mb-0"
+            w-80 sm:w-96 lg:w-96 flex-shrink-0 lg:mb-0"
           >
             <img
-              src={projectImages[index]}
-              alt={`${project.name} Screenshot`}
+              src={image}
+              alt={`${name} Screenshot`}
               style={{
                 maxWidth: "",
               }}
@@ -53,13 +40,13 @@ export default function Project() {
 
             <div className="p-4 flex flex-col flex-grow ">
               <h1 className="text-xl font-semibold mb-3 text-white ">
-                {project.name}
+                {name}
               </h1>
-              <p className="text-gray-300 flex-grow">{project.description}</p>
+              <p className="text-gray-300 flex-grow text-sm">{description}</p>
 
               <div className="mt-5 flex space-x-4">
                 <a
-                  href={project.url}
+                  href={url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block text-purple-100  rounded-lg bg-gradient-to-r from-pink-600 to-[#52168a] p-2 hover:scale-105 transition-transform"
@@ -68,12 +55,12 @@ export default function Project() {
                 </a>
 
                 <a
-                  href={project.githubUrl}
+                  href={githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block text-purple-100 rounded-lg border-2 border-[#32134e] hover:border-purple-700 py-2 px-4 hover:scale-110 transition-transform"
                 >
-                  Gitub
+                  GitHub
                 </a>
               </div>
             </div>
@@ -88,13 +75,13 @@ export default function Project() {
     //       </h1>
 
     //       <div className="max-w-7xl mx-auto grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-    //         {project.map(({ id, name, description, imageUrl, demoUrl, githubUrl }) => (
+    //         {project.map(({ id, name, description, image, demoUrl, githubUrl }) => (
     //           <article
     //             key={id}
     //             className="bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col"
     //           >
     //             <img
-    //               src={projectImages}
+    //               src={image}
     //               alt={name}
     //               className="w-full h-48 object-cover"
     //               loading="lazy"

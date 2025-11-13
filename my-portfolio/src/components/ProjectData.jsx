@@ -3,8 +3,55 @@ import movieImage from "../assets/movieapp2.png";
 import payrail from "../assets/payrail.png";
 import twitterImage from "../assets/twitter.png";
 import foodImage from "../assets/foodapp.png";
+import ticketflow from "../assets/ticketflow.png";
+import cryptoImage from "../assets/crypto.png";
+import facebook from "../assets/facebook.png";
 
 const project = [
+  {
+    name: "Crypto Live-Tracker",
+    description:
+      "CryptoLive is a real-time cryptocurrency tracking web app that allows users to monitor live rates of Bitcoin, Ethereum, and Dogecoin. The app displays accurate market prices and updates instantly to keep users informed of crypto fluctuations in real time.",
+    url: "https://crypto-live-tracker-app.vercel.app/",
+    githubUrl: "https://github.com/Fejiro-tech/TicketFlow.git",
+    technologies: ["React", "API", "Tailwind CSS"],
+    year: 2025,
+    image: cryptoImage,
+  },
+
+  {
+      name: "TicketFlow",
+      description:
+        "TicketFlow is a responsive and efficient ticket management system that helps users create, track, and resolve tickets effortlessly.I built this project using three different technologies — React, Vue, and Twig — to showcase my adaptability across modern JavaScript frameworks and traditional templating environments. Each version maintains the same clean UI, workflow, and functionality while leveraging the strengths of its framework.",
+      url: "https://ticket-flow-six.vercel.app/",
+      githubUrl: "https://github.com/Fejiro-tech/TicketFlow.git",
+      technologies: ["React", "Tailwind CSS"],
+      year: 2025,
+      image: ticketflow,
+  },
+
+  {
+    name: "Payrail Agency",
+    description:
+      "A robust web application built for managing digital banking services. Users can register as agents, view and manage wallets, handle transactions, and access detailed account summaries. This project highlights advanced API integration, state management, and a clean UI built with React and Tailwind CSS.",
+    url: "https://payrail.co",
+    githubUrl: "",
+    technologies: ["React", "API", "Tailwind CSS"],
+    year: 2024,
+    image: payrail,
+  },
+
+  // {
+  //   name: "Facebook",
+  //   description:
+  //     "A robust web application built for managing digital banking services. Users can register as agents, view and manage wallets, handle transactions, and access detailed account summaries. This project highlights advanced API integration, state management, and a clean UI built with React and Tailwind CSS.",
+  //   url: "",
+  //   githubUrl: "",
+  //   technologies: ["React", "API", "Tailwind CSS"],
+  //   year: 2024,
+  //   image: facebook,
+  // },
+
   {
     name: "Natours Project",
     description:
@@ -27,27 +74,16 @@ const project = [
     image: movieImage,
   },
 
-  {
-    name: "Payrail Agency",
-    description:
-      "A robust web application built for managing digital banking services. Users can register as agents, view and manage wallets, handle transactions, and access detailed account summaries. This project highlights advanced API integration, state management, and a clean UI built with React and Tailwind CSS.",
-    url: "",
-    githubUrl: "",
-    technologies: ["React", "API", "Tailwind CSS"],
-    year: 2024,
-    image: payrail,
-  },
-
-  {
-    name: "Twitter Clone",
-    description:
-      "A clone of Twitter's landing page. This project replicates the layout and styling of Twitter's homepage. ",
-    url: "https://fejiro-tech.github.io/Twitter-landing-page/",
-    githubUrl: "https://github.com/Fejiro-tech/Twitter-landing-page.git",
-    technologies: ["React", "API", "Tailwind CSS"],
-    year: 2024,
-    image: twitterImage,
-  },
+  // {
+  //   name: "Twitter Clone",
+  //   description:
+  //     "A clone of Twitter's landing page. This project replicates the layout and styling of Twitter's homepage. ",
+  //   url: "https://fejiro-tech.github.io/Twitter-landing-page/",
+  //   githubUrl: "https://github.com/Fejiro-tech/Twitter-landing-page.git",
+  //   technologies: ["React", "API", "Tailwind CSS"],
+  //   year: 2024,
+  //   image: twitterImage,
+  // },
 
   {
     name: "Food App",
@@ -58,7 +94,10 @@ const project = [
     technologies: ["React", "API", "Tailwind CSS"],
     year: 2024,
     image: foodImage,
+
   },
+
+
   
 ];
 

@@ -1,6 +1,6 @@
 import React from "react";
 import pics from "../assets/codingpics.jpeg";
-import pic4 from "../assets/pic4.JPG";
+import pic3 from "../assets/pic3.JPG";
 import Resume from "./Resume";
 
 export const style = {
@@ -18,12 +18,12 @@ const About = () => {
         id="about"
         className=" min-h-screen  flex flex-col-reverse lg:flex-row justify-around gap-8 py-30 m-auto px-8 lg:px-18"
       >
-        <div className=" w-[full] lg:w-[70%] ">
+        <div className=" w-full lg:w-[70%]">
           <h1 className="text-purple-100 text-4xl md:text-5xl font-extrabold">
             Meet the Developer
           </h1>{" "}
           <br />
-          <p className="text-purple-200 text-[16px] md:text-lg leading-relaxed ">
+          <p className="text-purple-200 text-[16px] md:text-lg leading-relaxed mt-4">
             Hi! I'm Priscillia Osumaka, a passionate Frontend Web Developer with
             a strong focus on creating clean, responsive, and user-centric web
             applications. I hold a B.Sc. in Political Science, but my true
@@ -69,13 +69,14 @@ const About = () => {
           </ul>
         </div>
 
-        <div className="w-full lg:w-[50%] flex justify-center">
+        <div className="w-full lg:w-[50%] flex items-center justify-center">
           <img
-            src={pic4}
+            src={pic3}
             alt="pic"
-            className="w-70 md:w-100 lg:w-150 rounded-full object-cover"
+            className="w-72 h-72 md:w-[500px] md:h-[500px] lg:w-[650px] lg:h-[650px] rounded-full object-cover"
           />
         </div>
+        
       </div>
 
       <div className="flex justify-center p-20">
