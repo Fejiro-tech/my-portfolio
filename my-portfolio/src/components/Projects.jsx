@@ -8,11 +8,11 @@ export default function Project() {
       id="projects"
       className="min-h-screen py-26 sm:px-8 md:px-12 lg:px-16 "
     >
-      <h1 className="text-4xl font-extrabold text-center mb-8 text-purple-100">
+      <h1 className="text-2xl md:text-4xl font-extrabold text-center mb-8 text-purple-100">
         My Projects
       </h1>
 
-      <p className="text-purple-200 text-center text-[16px] md:text-lg leading-relaxed md:mt-8 sm:mt-1 m-8">
+      <p className="text-purple-200 text-center text-[14px] md:text-lg leading-relaxed md:mt-8 sm:mt-1 m-8">
         A look at my latest frontend work—where performance, accessibility, and
         visual polish come together seamlessly.
       </p>
@@ -27,7 +27,7 @@ export default function Project() {
           <article
             key={index}
             className="bg-[#17171f] rounded-xl hover:shadow-lg duration-300 overflow-hidden flex flex-col p-4 mb-4 shadow-2xl hover:shadow-pink-200/50 hover:scale-105 transition-transform
-            w-80 sm:w-96 lg:w-96 flex-shrink-0 lg:mb-0"
+            w-80  sm:w-96 lg:w-96 flex-shrink-0 lg:mb-0"
           >
             <img
               src={image}
@@ -38,11 +38,11 @@ export default function Project() {
               className="w-full h-52 object-fill rounded-lg"
             />
 
-            <div className="p-4 flex flex-col flex-grow ">
+            <div className="p-2 md:p-4 flex flex-col flex-grow ">
               <h1 className="text-xl font-semibold mb-3 text-white ">
                 {name}
               </h1>
-              <p className="text-gray-300 flex-grow text-sm">{description}</p>
+              <p className="text-gray-300 flex-grow text-[12px] md:text-sm">{description}</p>
 
               <div className="mt-5 flex space-x-4">
                 <a

@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Nav />
-      <div style={bgStyle} className=" overflow-y-scroll scrollbar-hide h-screen px-4 pt-4 lg:pt-12">
+      <div style={bgStyle} className=" overflow-y-scroll scrollbar-hide h-screen pt-4 lg:pt-12">
         <Header />
         <About />
         <Skills />

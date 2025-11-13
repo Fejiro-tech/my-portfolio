@@ -25,7 +25,6 @@ export default function Contact() {
     setStatus("");
 
     const response = await fetch("https://formspree.io/f/xgvkgwkv", {
-      // Use your unique Formspree URL
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -47,14 +46,20 @@ export default function Contact() {
     <section
       id="contact"
       className="bg-[#0a0a0e]
-     text-purple-100 min-h-screen px-4 py-14"
+     text-purple-100 min-h-screen px-10 py-16"
     >
       <div className="max-w-3xl mx-auto text-center py-10 px-4">
-        <h2 className="text-4xl font-bold mb-4">Contact Me</h2>
-        <p className="text-gray-300 mb-10 text-[16px] md:text-lg leading-relaxed ">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 ">Get in Touch<span className="w-4 h-4 bg-green-400 inline-block rounded-lg ml-2 animate-pulse"></span></h2>
+        <p className="text-gray-300 mb-2 text-[14px] md:text-lg leading-relaxed ">
           Interested in working together? Let's connect. Fill out the form below
           or reach me directly through social media.
         </p>
+
+        <div className="space-y-2 text-sm md:text-xl mb-12">
+          <p>Email: <a href="mailto:priscilliaosumaka@yahoo.com" className="text-purple-400 hover:underline">priscilliaosumaka@yahoo.com</a></p>
+          <p>Phone: <a href="tel:+2347065520120" className="text-purple-400 hover:underline">+234 706 552 0120</a></p>
+          <p>Location: Lagos, Nigeria</p>
+        </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <input
@@ -102,7 +107,6 @@ export default function Contact() {
           </p>
         )}
 
-        {/* Social Icons */}
         <div className="flex justify-center mt-10 space-x-6">
           <a
             href="https://github.com/Fejiro-tech"

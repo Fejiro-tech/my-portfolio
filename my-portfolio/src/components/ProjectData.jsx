@@ -22,7 +22,7 @@ const project = [
   {
       name: "TicketFlow",
       description:
-        "TicketFlow is a responsive and efficient ticket management system that helps users create, track, and resolve tickets effortlessly.I built this project using three different technologies — React, Vue, and Twig — to showcase my adaptability across modern JavaScript frameworks and traditional templating environments. Each version maintains the same clean UI, workflow, and functionality while leveraging the strengths of its framework.",
+        "TicketFlow is a responsive and efficient ticket management system that helps users create, track, and resolve tickets effortlessly.",
       url: "https://ticket-flow-six.vercel.app/",
       githubUrl: "https://github.com/Fejiro-tech/TicketFlow.git",
       technologies: ["React", "Tailwind CSS"],
