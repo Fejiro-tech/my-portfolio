@@ -1,11 +1,10 @@
-// components/Logo.tsx
 
 export default function Logo() {
   return (
-    <div className="flex md:mr-10  ">
+    <div className="flex  md:mr-10  ">
       <a href="#home">
         {/* Code Icon */}
-        <span className="text-pink-600 text-[22px] sm:text-[20px] md:text-[28px] lg:text-35px] font-extrabold">
+        <span className="text-pink-600 text-[18px] sm:text-[20px] md:text-[28px] lg:text-35px] font-extrabold">
           &lt;/&gt;
         </span>
 

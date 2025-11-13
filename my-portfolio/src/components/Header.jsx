@@ -6,7 +6,7 @@ import ArrowIcon from "./ArrowIcon.jsx";
 
 
 export const bgStyle = {
-  backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 1)), url(${backgroundImage})`,
+  backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 1)), url(${backgroundImage})`,
   backgroundSize: "fit",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",

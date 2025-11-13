@@ -46,7 +46,7 @@ const items = {
 
 export default function Skills() {
   return (
-    <div id="skills" style={bgStyle} className="min-h-screen px-10 py-16 flex justify-center items-center">
+    <div id="skills"  className="min-h-screen px-10 py-16 flex justify-center items-center">
       <div className="w-full max-w-5xl py-12 md:py-20">
         <h1 className="text-purple-100 text-2xl md:text-4xl font-extrabold text-center mb-8">
           Technologies & Tools
