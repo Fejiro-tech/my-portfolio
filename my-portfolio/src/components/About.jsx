@@ -19,7 +19,7 @@ const About = () => {
         className="flex flex-col-reverse lg:flex-row justify-around gap-4 py-24 m-auto px-8 lg:px-18"
       >
         <div className=" w-full lg:w-[70%]">
-          <h1 className="text-purple-100 text-2xl md:text-4xl font-extrabold">
+          <h1 className="text-purple-100 text-2xl md:text-4xl font-extrabold text-center sm:text-left">
             Meet the Developer
           </h1>{" "}
           <br />
@@ -70,7 +70,7 @@ const About = () => {
           <img
             src={pic3}
             alt="pic"
-            className="w-72 h-72 md:w-[500px] md:h-[500px] lg:w-[650px] lg:h-[650px] rounded-full object-cover ring-2 ring-pink-800  hidden sm:block"
+            className="w-72 h-72 md:w-[500px] md:h-[500px] lg:w-[650px] lg:h-[650px] rounded-full object-cover ring-2 ring-pink-800 drop-shadow-[0_0_20px_#ec4899]   hidden sm:block"
           />
         </div>
         
