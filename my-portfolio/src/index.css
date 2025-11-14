@@ -3,6 +3,7 @@
 /* Make body scrollable, not inner divs */
 html, body {
   height: 100%;
+  background-color: #000000;
   margin: 0;
   overflow-y: auto; /* body handles scrolling */
   -webkit-overflow-scrolling: touch; /* smooth scrolling for iOS */
