@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -8,6 +9,7 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState("");
+  const [errorMsg, setErrorMsg] = useState("")
 
   // Handle form input changes
   const handleChange = (e) => {
@@ -32,6 +34,12 @@ export default function Contact() {
       body: JSON.stringify(formData),
     });
 
+    if (!formData.name || !formData.email || !formData.message) {
+      toast.error("Please fill up all fields");
+      setIsSubmitting(false);
+      return
+    }
+
     if (response.ok) {
       setStatus("Thank you for reaching out! I'll get back to you soon.");
       setFormData({ name: "", email: "", message: "" });
@@ -49,7 +57,7 @@ export default function Contact() {
      text-purple-100 min-h-screen px-10 py-16"
     >
       <div className="max-w-3xl mx-auto text-center py-10 px-4">
-        <h2 className="text-2xl md:text-4xl font-bold mb-4 flex justify-center items-center">Get in Touch<span className="w-2 h-2 bg-green-400 inline-block rounded-lg ml-2 mt-2 animate-pulse"></span></h2>
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 flex justify-center items-center">Get in Touch<span className="w-2 h-2 bg-green-400 inline-block rounded-lg ml-2 mt-1 animate-pulse"></span></h2>
         <p className="text-gray-300 mb-12 text-[14px] md:text-[16px] leading-relaxed ">
           Interested in working together? Let's connect. Fill out the form below
           or reach me directly through social media.
@@ -65,6 +73,7 @@ export default function Contact() {
             onChange={handleChange}
             className="w-full p-3 rounded-md bg-[#252540] border border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-600"
           />
+        
           <input
             type="email"
             name="email"
@@ -138,8 +147,8 @@ export default function Contact() {
           </a>
         </div>
 
-        <div className="space-y-2 text-[14px] md:text-[16px] text-gray-300 mt-4">
-          <p>Email: <a href="mailto:priscilliaosumaka@yahoo.com" className="text-purple-400 hover:underline">priscilliaosumaka@yahoo.com</a></p>
+        <div className="space-y-0.5 text-[14px] md:text-[16px] text-gray-300 mt-4">
+
           <p>Phone: <a href="tel:+2347065520120" className="text-purple-400 hover:underline">+234 706 552 0120</a></p>
           <p>Location: Lagos, Nigeria</p>
         </div>

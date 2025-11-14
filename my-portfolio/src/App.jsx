@@ -7,10 +7,12 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Project from "./components/Projects";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
+      <Toaster position="top-center"/>
       <Nav />
       <div style={bgStyle} className=" overflow-y-scroll scrollbar-hide h-screen pt-4 lg:pt-12">
         <Header />
