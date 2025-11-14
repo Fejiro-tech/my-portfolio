@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 export default function Nav() {
   return (
-    <div className="flex justify-between items-center bg-black w-full h-[10vh] fixed z-50  border-b border-gray-800 px-4 lg:px-18 py-10">
+    <div className="flex justify-between items-center bg-black w-full h-[10vh] fixed z-50  border-b border-gray-800 px-6 lg:px-18 py-10">
       <Logo />
       <CustomButton />
     </div>

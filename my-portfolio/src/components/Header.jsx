@@ -10,7 +10,6 @@ export const bgStyle = {
   backgroundSize: "fit",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
-
   color: "black",
 };
 
@@ -37,7 +36,7 @@ export default function Header({}) {
       className="flex items-center min-h-screen"
     >
       <motion.div
-        className="mx-auto w-full max-w-[1050px] text-center p-10"
+        className="mx-auto w-full max-w-[1050px] text-center p-2"
         variants={containerVariants}
         initial="hidden"
         animate="show"

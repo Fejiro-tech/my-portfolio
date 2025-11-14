@@ -16,7 +16,7 @@ const About = () => {
     <div style={style} className=" min-h-screen flex flex-col">
       <div
         id="about"
-        className="  flex flex-col-reverse lg:flex-row justify-around gap-4 py-24 m-auto px-8 lg:px-18"
+        className="flex flex-col-reverse lg:flex-row justify-around gap-4 py-24 m-auto px-8 lg:px-18"
       >
         <div className=" w-full lg:w-[70%]">
           <h1 className="text-purple-100 text-2xl md:text-4xl font-extrabold">
