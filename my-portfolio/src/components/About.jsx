@@ -16,14 +16,14 @@ const About = () => {
     <div style={style} className=" min-h-screen flex flex-col">
       <div
         id="about"
-        className=" min-h-screen  flex flex-col-reverse lg:flex-row justify-around gap-8 py-30 m-auto px-8 lg:px-18"
+        className="  flex flex-col-reverse lg:flex-row justify-around gap-4 py-24 m-auto px-8 lg:px-18"
       >
         <div className=" w-full lg:w-[70%]">
           <h1 className="text-purple-100 text-2xl md:text-4xl font-extrabold">
             Meet the Developer
           </h1>{" "}
           <br />
-          <p className="text-purple-200 text-[16px] md:text-lg leading-relaxed mt-4">
+          <p className="text-purple-200 text-[14px] md:text-base leading-relaxed mt-4">
             Hi! I'm Priscillia Osumaka, a passionate Frontend Web Developer with
             a strong focus on creating clean, responsive, and user-centric web
             applications. I hold a B.Sc. in Political Science, but my true
@@ -42,11 +42,11 @@ const About = () => {
             always pushing myself to the next level.
           </p>
           <br /> <br />
-          <h1 className="text-purple-300 text-2xl md:text-3xl font-bold">
+          <h1 className="text-purple-300 text-2xl md:text-3xl font-bold mb-4">
             Fun Facts
-          </h1>{" "}
-          <br />
-          <ul className="text-purple-200 text-base md:text-lg list-disc pl-6 space-y-6">
+          </h1>
+         
+          <ul className="text-purple-200 text-[14px] md:text-base list-disc pl-6 space-y-2">
             <li>
               🎓 I studied Political Science, but found my true passion in
               coding and design.
@@ -70,7 +70,7 @@ const About = () => {
           <img
             src={pic3}
             alt="pic"
-            className="w-72 h-72 md:w-[500px] md:h-[500px] lg:w-[650px] lg:h-[650px] rounded-full object-cover"
+            className="w-72 h-72 md:w-[500px] md:h-[500px] lg:w-[650px] lg:h-[650px] rounded-full object-cover ring-2 ring-pink-800"
           />
         </div>
         

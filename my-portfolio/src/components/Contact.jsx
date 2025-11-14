@@ -49,19 +49,14 @@ export default function Contact() {
      text-purple-100 min-h-screen px-10 py-16"
     >
       <div className="max-w-3xl mx-auto text-center py-10 px-4">
-        <h2 className="text-2xl md:text-4xl font-bold mb-4">Get in Touch<span className="w-4 h-4 bg-green-400 inline-block rounded-lg ml-2 animate-pulse"></span></h2>
-        <p className="text-gray-300 mb-2 text-[14px] md:text-[16px] leading-relaxed ">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 flex justify-center items-center">Get in Touch<span className="w-2 h-2 bg-green-400 inline-block rounded-lg ml-2 mt-2 animate-pulse"></span></h2>
+        <p className="text-gray-300 mb-12 text-[14px] md:text-[16px] leading-relaxed ">
           Interested in working together? Let's connect. Fill out the form below
           or reach me directly through social media.
         </p>
 
-        <div className="space-y-2 text-[14px] md:text-[16px] text-gray-300 mb-12">
-          <p>Email: <a href="mailto:priscilliaosumaka@yahoo.com" className="text-purple-400 hover:underline">priscilliaosumaka@yahoo.com</a></p>
-          <p>Phone: <a href="tel:+2347065520120" className="text-purple-400 hover:underline">+234 706 552 0120</a></p>
-          <p>Location: Lagos, Nigeria</p>
-        </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6 ">
           <input
             type="text"
             name="name"
@@ -107,7 +102,7 @@ export default function Contact() {
           </p>
         )}
 
-        <div className="flex justify-center mt-10 space-x-6">
+        <div className="flex justify-center mt-14 space-x-6">
           <a
             href="https://github.com/Fejiro-tech"
             target="_blank"
@@ -141,6 +136,12 @@ export default function Contact() {
               className="w-10 h-10 rounded-md hover:scale-110 transition-transform bg-white"
             />
           </a>
+        </div>
+
+        <div className="space-y-2 text-[14px] md:text-[16px] text-gray-300 mt-4">
+          <p>Email: <a href="mailto:priscilliaosumaka@yahoo.com" className="text-purple-400 hover:underline">priscilliaosumaka@yahoo.com</a></p>
+          <p>Phone: <a href="tel:+2347065520120" className="text-purple-400 hover:underline">+234 706 552 0120</a></p>
+          <p>Location: Lagos, Nigeria</p>
         </div>
       </div>
     </section>

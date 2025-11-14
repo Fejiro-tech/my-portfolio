@@ -6,11 +6,8 @@ export const buttonStyle = {
   WebkitBackgroundClip: "text",
   backgroundClip: "text",
   color: "transparent",
-  fontWeight: "bold",
-  fontSize: "18px",
   border: "none",
   backgroundColor: "transparent", // remove default button bg
-  cursor: "pointer",
 };
 
 export default function CustomButton() {
@@ -33,7 +30,7 @@ export default function CustomButton() {
         {/* Menu Items (Desktop) */}
         <ul
           style={buttonStyle}
-          className="hidden lg:flex space-x-6 md:space-x-4 "
+          className="hidden lg:flex space-x-6 md:space-x-4 font-bold "
         >
           <li>
             <a

@@ -23,7 +23,7 @@ export default function Project() {
                 
       "
       >
-        {project.map(({ name, description, image, url, githubUrl }, index) => (
+        {project.map(({ name, description, image, url, githubUrl, technologies }, index) => (
           <article
             key={index}
             className="bg-[#17171f] rounded-xl hover:shadow-lg duration-300 overflow-hidden flex flex-col p-4 mb-4 shadow-2xl hover:shadow-pink-200/50 hover:scale-105 transition-transform
@@ -43,6 +43,8 @@ export default function Project() {
                 {name}
               </h1>
               <p className="text-gray-300 flex-grow text-[12px] md:text-sm">{description}</p>
+
+              <p className="text-gray-300 font-bold mt-6">{technologies}</p>
 
               <div className="mt-5 flex space-x-4">
                 <a

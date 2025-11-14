@@ -37,43 +37,44 @@ export default function Header({}) {
       className="flex items-center min-h-screen"
     >
       <motion.div
-        className="mx-auto w-full max-w-[1050px] text-center"
+        className="mx-auto w-full max-w-[1050px] text-center p-10"
         variants={containerVariants}
         initial="hidden"
         animate="show"
       >
         <motion.h1
-          className=" text-purple-100 text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-extrabold leading-tight"
+          className=" text-purple-100 text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-extrabold leading-tight "
           variants={childVariants}
         >
           Hi👋,
           <br />
           <motion.span variants={childVariants}>I'm Priscillia,</motion.span>
           <br />
-          <motion.span variants={childVariants} className="text-pink-600">
+          <motion.span variants={childVariants} className="text-pink-600 " >
             A Sofware Developer.<br/>
             I craft clean interfaces & code
+            
           </motion.span>
         </motion.h1>
 
         <motion.p
-          className="text-[#a1a1a1] text-base sm:text-lg md:text-xl mt-6"
+          className="text-[#a1a1a1] text-sm mt-6"
           variants={childVariants}
         >
           Front End Developer / JavaScript / React / Next.js / TypeScript
         </motion.p>
 
         <motion.div
-          className="flex justify-center mt-10"
+          className="flex justify-center mt-14"
           variants={childVariants}
         >
           <a
             href="#about"
             style={buttonStyle}
-            className="px-6 py-3 font-bold rounded-full  flex flex-col  justify-center items-center gap-2 bg-pink-600 text-white hover:bg-pink-700 transition"
+            className="px-6 py-3 font-bold rounded-full  flex flex-col  justify-center items-center  bg-pink-600 text-white hover:bg-pink-700 transition text-sm"
           >
             Learn about what I do
-            <ArrowIcon className="w-5 h-5" />
+            <ArrowIcon className="w-4 h-4" />
           </a>
         </motion.div>
       </motion.div>
