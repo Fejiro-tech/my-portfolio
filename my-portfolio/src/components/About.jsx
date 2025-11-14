@@ -13,7 +13,7 @@ export const style = {
 
 const About = () => {
   return (
-    <div style={style} className=" min-h-screen flex flex-col">
+    <div style={style} className=" flex flex-col">
       <div
         id="about"
         className="flex flex-col-reverse lg:flex-row justify-around gap-4 py-24 m-auto px-8 lg:px-18"

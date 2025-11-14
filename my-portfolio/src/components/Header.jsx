@@ -35,7 +35,7 @@ export default function Header({}) {
   <div
   id="home"
   style={bgStyle}
-  className="flex items-center justify-center min-h-screen relative"
+  className="flex items-center justify-center relative py-16"
 >
   <div className="
       flex flex-col sm:flex-row 
