@@ -44,7 +44,7 @@ export default function Header({}) {
     "
   >
     <div 
-      className=" absolute bottom-0 right-1 w-64 h-64 bg-purple-600/40 rounded-full opacity-20 blur-lg"
+      className=" absolute bottom-0 right-1 w-64 h-64 bg-purple-600/40 rounded-full opacity-20 blur-lg hidden sm:block"
       aria-hidden="true"
     ></div>
     <div 
