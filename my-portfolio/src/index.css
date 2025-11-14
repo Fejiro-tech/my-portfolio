@@ -1,12 +1,18 @@
 @import "tailwindcss";
 
-/* Hide scrollbar but allow scrolling */
-.scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;     /* Firefox */
-  }
-  
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;             /* Chrome, Safari, Opera */
-  }
-  
+/* Make body scrollable, not inner divs */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto; /* body handles scrolling */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling for iOS */
+}
+
+/* Hide scrollbars */
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+body {
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
