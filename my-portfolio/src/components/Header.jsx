@@ -52,7 +52,7 @@ export default function Header({}) {
     <img
       src={pic3}
       alt="pic"
-      className="w-54 h-54 rounded-full object-cover ring-2 ring-pink-800 mt-14 mb-6 drop-shadow-[0_0_50px_#ec4899]  block sm:hidden"
+      className="w-64 h-64 rounded-full object-cover ring-2 ring-pink-800 mt-14 mb-6 drop-shadow-[0_0_50px_#ec4899]  block sm:hidden"
     />
     
     <motion.div
