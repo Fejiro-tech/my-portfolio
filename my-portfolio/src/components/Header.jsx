@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { buttonStyle } from "./CustomButton.jsx";
 import icon from "../assets/arrow.svg";
 import ArrowIcon from "./ArrowIcon.jsx";
+import pic3 from "../assets/pic3.JPG";
+import Resume from "./Resume.jsx";
 
 
 export const bgStyle = {
@@ -30,54 +32,78 @@ export default function Header({}) {
   };
 
   return (
-    <div
-      id="home"
-      style={bgStyle}
-      className="flex items-center min-h-screen"
+  <div
+  id="home"
+  style={bgStyle}
+  className="flex items-center justify-center min-h-screen relative"
+>
+  <div className="
+      flex flex-col sm:flex-row 
+      items-center sm:items-center 
+      justify-center w-full pt-10 px-8
+    "
+  >
+    <div 
+      className=" absolute bottom-0 right-1 w-64 h-64 bg-purple-600/40 rounded-full opacity-30 blur-lg"
+      aria-hidden="true"
+    ></div>
+      
+    {/* Mobile-only image */}
+    <img
+      src={pic3}
+      alt="pic"
+      className="w-54 h-54 rounded-full object-cover ring-2 ring-pink-800 mt-14 mb-6 drop-shadow-[0_0_50px_#ec4899]  block sm:hidden"
+    />
+    
+    <motion.div
+      className="mx-auto w-full max-w-[1050px] items-center sm:text-center"
+      variants={containerVariants}
+      initial="hidden"
+      animate="show"
     >
-      <motion.div
-        className="mx-auto w-full max-w-[1050px] text-center p-2"
-        variants={containerVariants}
-        initial="hidden"
-        animate="show"
+      <motion.h1
+        className="text-purple-100 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+        variants={childVariants}
       >
-        <motion.h1
-          className=" text-purple-100 text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-extrabold leading-tight "
-          variants={childVariants}
-        >
-          Hi👋,
+        Hi👋,
+        <br />
+        <motion.span variants={childVariants}>I'm Priscillia,</motion.span>
+        <br />
+        <motion.span variants={childVariants} className="text-pink-600">
+          A Software Developer.
           <br />
-          <motion.span variants={childVariants}>I'm Priscillia,</motion.span>
-          <br />
-          <motion.span variants={childVariants} className="text-pink-600 " >
-            A Sofware Developer.<br/>
-            I craft clean interfaces & code
-            
-          </motion.span>
-        </motion.h1>
+          I craft clean interfaces & code
+        </motion.span>
+      </motion.h1>
 
-        <motion.p
-          className="text-[#a1a1a1] text-sm mt-6"
-          variants={childVariants}
-        >
-          Front End Developer / JavaScript / React / Next.js / TypeScript
-        </motion.p>
+      <motion.p
+        className="text-[#a1a1a1] text-sm mt-6"
+        variants={childVariants}
+      >
+        Front End Developer / JavaScript / React / Next.js / TypeScript
+      </motion.p>
 
-        <motion.div
-          className="flex justify-center mt-14"
-          variants={childVariants}
+      <motion.div
+        className="flex justify-center mt-6 sm:mt-14"
+        variants={childVariants}
+      >
+        <a
+          href="#about"
+          style={buttonStyle}
+          className="px-6 py-3 font-bold rounded-full  items-center gap-2 bg-pink-600 text-white hover:bg-pink-700 transition text-sm hidden sm:flex flex-col"
         >
-          <a
-            href="#about"
-            style={buttonStyle}
-            className="px-6 py-3 font-bold rounded-full  flex flex-col  justify-center items-center  bg-pink-600 text-white hover:bg-pink-700 transition text-sm"
-          >
-            Learn about what I do
-            <ArrowIcon className="w-4 h-4" />
-          </a>
-        </motion.div>
+          Learn about what I do
+          <ArrowIcon className="w-4 h-4" />
+        </a>
       </motion.div>
-    </div>
+
+      <div className=" flex justify-start sm:hidden">
+          <Resume />
+      </div>
+    </motion.div>
+  </div>
+</div>
+
   );
 }
 

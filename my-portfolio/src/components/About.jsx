@@ -70,13 +70,15 @@ const About = () => {
           <img
             src={pic3}
             alt="pic"
-            className="w-72 h-72 md:w-[500px] md:h-[500px] lg:w-[650px] lg:h-[650px] rounded-full object-cover ring-2 ring-pink-800"
+            className="w-72 h-72 md:w-[500px] md:h-[500px] lg:w-[650px] lg:h-[650px] rounded-full object-cover ring-2 ring-pink-800  hidden sm:block"
           />
         </div>
         
       </div>
 
-      <div className="flex justify-center p-20">
+      
+
+      <div className=" hidden sm:flex justify-center p-10 ">
         <Resume />
       </div>
     </div>
