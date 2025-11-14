@@ -53,8 +53,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="
-     text-purple-100 px-10 py-16"
+      className="text-purple-100 px-10 py-16"
     >
       <div className="max-w-3xl mx-auto text-center py-10 px-4">
         <h2 className="text-2xl md:text-4xl font-bold mb-4 flex justify-center items-center">Get in Touch<span className="w-2 h-2 bg-green-400 inline-block rounded-lg ml-2 mt-1 animate-pulse"></span></h2>

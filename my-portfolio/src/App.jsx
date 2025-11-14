@@ -14,7 +14,7 @@ function App() {
     <>
       <Toaster position="top-center"/>
       <Nav />
-      <div style={bgStyle} className=" w-full pt-4 lg:pt-12">
+      <div style={bgStyle} className=" pt-4 lg:pt-12">
         <Header />
         <About />
         <Skills />
