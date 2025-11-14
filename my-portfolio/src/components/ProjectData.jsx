@@ -1,24 +1,23 @@
 import natoursImage from "../assets/natours.png";
 import movieImage from "../assets/movieapp2.png";
-import payrail from "../assets/payrail.png";
-import twitterImage from "../assets/twitter.png";
+import payrail from "../assets/payrailimg1.png";
 import foodImage from "../assets/foodapp.png";
 import ticketflow from "../assets/ticketflow.png";
 import cryptoImage from "../assets/crypto.png";
 import facebook from "../assets/facebook.png";
 
 const project = [
-  {
-    name: "Crypto Live-Tracker",
-    description:
-      "CryptoLive is a real-time cryptocurrency tracking web app that allows users to monitor live rates of Bitcoin, Ethereum, and Dogecoin. The app displays accurate market prices and updates instantly to keep users informed of crypto fluctuations in real time.",
-    url: "https://crypto-live-tracker-app.vercel.app/",
-    githubUrl: "https://github.com/Fejiro-tech/TicketFlow.git",
-    technologies: ["React | API |  CSS"],
-    year: 2025,
-    image: cryptoImage,
-  },
 
+  {
+    name: "Payrail Agency",
+    description:
+      "A robust web application built for managing digital banking services. Users can register as agents, view and manage wallets, handle transactions, and access detailed account summaries. This project highlights advanced API integration, state management, and a clean UI built with React and Tailwind CSS.",
+    url: "https://payrail.co",
+    githubUrl: "",
+    technologies: ["Nextjs | Tailwind CSS"],
+    year: 2025,
+    image: payrail,
+  },
   {
       name: "TicketFlow",
       description:
@@ -29,16 +28,15 @@ const project = [
       year: 2025,
       image: ticketflow,
   },
-
   {
-    name: "Payrail Agency",
+    name: "Crypto Live-Tracker",
     description:
-      "A robust web application built for managing digital banking services. Users can register as agents, view and manage wallets, handle transactions, and access detailed account summaries. This project highlights advanced API integration, state management, and a clean UI built with React and Tailwind CSS.",
-    url: "https://payrail.co",
-    githubUrl: "",
-    technologies: ["Nextjs | Tailwind CSS"],
-    year: 2024,
-    image: payrail,
+      "CryptoLive is a real-time cryptocurrency tracking web app that allows users to monitor live rates of Bitcoin, Ethereum, and Dogecoin. The app displays accurate market prices and updates instantly to keep users informed of crypto fluctuations in real time.",
+    url: "https://crypto-live-tracker-app.vercel.app/",
+    githubUrl: "https://github.com/Fejiro-tech/TicketFlow.git",
+    technologies: ["React | API |  CSS"],
+    year: 2025,
+    image: cryptoImage,
   },
 
   // {
