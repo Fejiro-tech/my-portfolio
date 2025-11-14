@@ -12,7 +12,7 @@ export default function Project() {
         My Projects
       </h1>
 
-      <p className="text-purple-200 text-center text-[14px] md:text-lg leading-relaxed md:mt-8 sm:mt-1 m-8">
+      <p className="text-purple-200 text-center text-am md:text-base leading-relaxed md:mt-8 sm:mt-1 m-8">
         A look at my latest frontend work—where performance, accessibility, and
         visual polish come together seamlessly.
       </p>
