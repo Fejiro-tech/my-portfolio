@@ -11,7 +11,7 @@ const project = [
   {
     name: "Payrail Agency",
     description:
-      "A robust web application built for managing digital banking services. Users can register as agents, view and manage wallets, handle transactions, and access detailed account summaries. This project highlights advanced API integration, state management, and a clean UI built with React and Tailwind CSS.",
+      "A robust web application built for managing digital banking services. Users can register as agents, view and manage wallets, handle transactions, and access detailed account summaries. This project highlights advanced API integration, state management, and a clean UI built with Next.js and Tailwind CSS.",
     url: "https://payrail.co",
     githubUrl: "",
     technologies: ["Nextjs | Tailwind CSS"],
