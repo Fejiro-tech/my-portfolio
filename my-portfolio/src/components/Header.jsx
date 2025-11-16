@@ -74,9 +74,10 @@ export default function Header({}) {
         <motion.span variants={childVariants}>I'm Priscillia,</motion.span>
         <br />
         <motion.span variants={childVariants} className="text-pink-600">
-          A Software Developer.
+          A Front-End Developer.
           <br />
-          I craft clean interfaces & code
+        I craft clean interfaces & code
+          
         </motion.span>
       </motion.h1>
 
@@ -84,7 +85,7 @@ export default function Header({}) {
         className="text-[#a1a1a1] text-sm mt-6"
         variants={childVariants}
       >
-        Front End Developer / JavaScript / React / Next.js / TypeScript
+        JavaScript &bull; React &bull; Next.js &bull; TypeScript
       </motion.p>
 
       <motion.div
