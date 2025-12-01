@@ -5,6 +5,7 @@ import foodImage from "../assets/foodapp.png";
 import ticketflow from "../assets/ticketflow.png";
 import cryptoImage from "../assets/crypto.png";
 import facebook from "../assets/facebook.png";
+import naijastyleImg from "../assets/fashionapp.png"
 
 const project = [
 
@@ -27,6 +28,18 @@ const project = [
       technologies: ["React | Tailwind CSS"],
       year: 2025,
       image: ticketflow,
+  },
+
+  {
+    name: "Naija Style Co.",
+    description:
+      "Naija Style Co is a responsive Next.js fashion storefront showcasing Nigerian traditional and modern outfits. It features category-based browsing, dynamic product pages, size selection, and a cart system powered by React Context API. The UI is clean, fast, and fully optimized for mobile.",
+    url: "https://my-naija-style.vercel.app/",
+    githubUrl: "https://github.com/Fejiro-tech/NaijaStyle.git",
+    technologies: ["Nextjs", "Tailwind CSS"],
+    year: 2025,
+    image: naijastyleImg,
+
   },
   {
     name: "Crypto Live-Tracker",
@@ -72,28 +85,18 @@ const project = [
     image: movieImage,
   },
 
+
   // {
-  //   name: "Twitter Clone",
+  //   name: "Food App",
   //   description:
-  //     "A clone of Twitter's landing page. This project replicates the layout and styling of Twitter's homepage. ",
-  //   url: "https://fejiro-tech.github.io/Twitter-landing-page/",
-  //   githubUrl: "https://github.com/Fejiro-tech/Twitter-landing-page.git",
+  //     "A recipe discovery app that enables users to search for a wide variety of food recipes using a public API. Users can view detailed recipes including ingredients, preparation steps, and nutritional info. This project highlights API consumption, dynamic rendering of search results, and a visually appealing layout built with React and Tailwind CSS.",
+  //   url: "",
+  //   githubUrl: "https://github.com/Fejiro-tech/Food-app.git",
   //   technologies: ["React", "API", "Tailwind CSS"],
   //   year: 2024,
-  //   image: twitterImage,
+  //   image: foodImage,
+
   // },
-
-  {
-    name: "Food App",
-    description:
-      "A recipe discovery app that enables users to search for a wide variety of food recipes using a public API. Users can view detailed recipes including ingredients, preparation steps, and nutritional info. This project highlights API consumption, dynamic rendering of search results, and a visually appealing layout built with React and Tailwind CSS.",
-    url: "",
-    githubUrl: "https://github.com/Fejiro-tech/Food-app.git",
-    technologies: ["React", "API", "Tailwind CSS"],
-    year: 2024,
-    image: foodImage,
-
-  },
 
 
   
