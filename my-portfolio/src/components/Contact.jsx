@@ -53,10 +53,10 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="text-purple-100 px-10 py-16"
+      className="px-10 py-16 text-slate-300"
     >
       <div className="max-w-3xl mx-auto text-center py-10 px-4">
-        <h2 className="text-2xl md:text-4xl font-bold mb-4 flex justify-center items-center">Get in Touch<span className="w-2 h-2 bg-green-400 inline-block rounded-lg ml-2 mt-1 animate-pulse"></span></h2>
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 flex justify-center items-center text-white mt-8">Get in Touch<span className="w-2 h-2 bg-green-400 inline-block rounded-lg ml-2 mt-1 animate-pulse"></span></h2>
         <p className="text-gray-300 mb-12 text-[14px] md:text-[16px] leading-relaxed ">
           Interested in working together? Let's connect. Fill out the form below
           or reach me directly through social media.
@@ -70,7 +70,7 @@ export default function Contact() {
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-3 rounded-md bg-[#252540] border border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            className="w-full p-3 rounded-md bg-[#252540] border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
         
           <input
@@ -79,7 +79,7 @@ export default function Contact() {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-3 rounded-md bg-[#252540] border border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            className="w-full p-3 rounded-md bg-[#252540] border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
           <textarea
             name="message"
@@ -87,12 +87,12 @@ export default function Contact() {
             placeholder="Your Message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-3 rounded-md bg-[#252540] border border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            className="w-full p-3 rounded-md bg-[#252540] border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
           <button
             type="submit"
             disabled={isSubmitting}
-            className="bg-gradient-to-r from-pink-600 to-[#52168a] text-white px-6 py-3 rounded-md font-bold hover:scale-105 transition-transform"
+            className="bg-blue-400/15 backdrop-blur-lg border border-blue-400/20 shadow-md shadow-blue-400/30 hover:bg-blue-500/20 text-white px-6 py-3 rounded-md font-bold hover:scale-105 transition-transform cursor-pointer"
           >
             {isSubmitting ? "Sending..." : "Send Message"}
           </button>
@@ -148,7 +148,7 @@ export default function Contact() {
 
         <div className="space-y-0.5 text-[14px] md:text-[16px] text-gray-300 mt-4">
 
-          <p>Phone: <a href="tel:+2347065520120" className="text-purple-400 hover:underline">+234 706 552 0120</a></p>
+          <p>Phone: <a href="tel:+2347065520120" className="text-blue-400 hover:underline">+234 706 552 0120</a></p>
           <p>Location: Lagos, Nigeria</p>
         </div>
       </div>

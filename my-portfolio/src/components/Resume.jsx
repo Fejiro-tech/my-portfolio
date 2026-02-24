@@ -9,7 +9,7 @@ export default function Resume() {
         rel="noopener noreferrer"
       >
         <button
-          className="px-6 py-2 text-purple-200 font-extrabold rounded-3xl border border-gray-500 transform transition duration-300 hover:scale-105 hover:border-pink-200 hover:text-pink-300"
+          className="px-6 py-2  font-extrabold rounded-3xl transform transition duration-300 hover:scale-105 bg-blue-400/25 backdrop-blur-lg border border-blue-400/20 shadow-md shadow-blue-400/30 hover:bg-blue-500/40 text-white cursor-pointer"
         >
           View Resume
         </button>

@@ -48,11 +48,11 @@ export default function Skills() {
   return (
     <div id="skills"  className="min-h-screen px-10 py-16 flex justify-center items-center">
       <div className="w-full max-w-5xl py-12 md:py-20">
-        <h1 className="text-purple-100 text-2xl md:text-4xl font-extrabold text-center ">
+        <h1 className="text-white text-2xl md:text-4xl font-extrabold text-center ">
           Technologies & Tools
         </h1>
 
-        <p className="text-purple-200 text-center text-[14px] md:text-base leading-relaxed mt-8 md:mt-10 lg:mt-12">
+        <p className="text-slate-300 text-center text-[14px] md:text-base leading-relaxed mt-8 md:mt-10 lg:mt-12">
           Here are some of the core tools and technologies I use to design, develop, and deploy responsive and
           scalable web applications.
         </p>
@@ -63,7 +63,7 @@ export default function Skills() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 bg-[#1e1e2e] rounded-xl shadow-lg mt-6 group p-4"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 rounded-xl shadow-lg mt-6 group p-4  bg-blue-400/20 backdrop-blur-lg border border-blue-400/20 text-white"
         >
           {tech.map((item, index) => (
             // Outer div handles hidden / group-hover logic
@@ -72,7 +72,7 @@ export default function Skills() {
                 variants={items}
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.2, ease: "easeInOut" }}
-                className="flex flex-col items-center gap-2 bg-[#1e1e2e] p-5 rounded-xl shadow-lg hover:shadow-pink-500/50 w-full"
+                className="flex flex-col items-center gap-2 bg-blue-400/5 p-5 rounded-xl shadow-lg hover:shadow-blue-400/30 w-full"
               >
                 {item.icon}
                 <span className="text-sm text-white mt-4">{item.name}</span>

@@ -5,29 +5,29 @@ import { buttonStyle } from "./CustomButton";
 export default function Project() {
   return (
     <section
-      id="projects"
-      className="py-26 sm:px-8 md:px-12 lg:px-16 "
+      id="projects" 
+      className="py-26 sm:px-8 md:px-12"
     >
-      <h1 className="text-2xl md:text-4xl font-extrabold text-center mb-8 text-purple-100">
+      <h1 className="text-2xl md:text-4xl font-extrabold text-center mb-8 text-white mt-8">
         My Projects
       </h1>
 
-      <p className="text-purple-200 text-center text-am md:text-base leading-relaxed md:mt-8 sm:mt-1 m-8">
+      <p className="text-slate-300 text-center text-am md:text-base leading-relaxed md:mt-8 sm:mt-1 m-8">
         A look at my latest frontend work—where performance, accessibility, and
         visual polish come together seamlessly.
       </p>
 
-      <div
-        className="max-w-7xl mx-auto flex overflow-x-auto space-x-10 
-                  lg:grid lg:grid-cols-3 lg:gap-12 hide-scrollbar p-6 rounded-2xl
+      <div 
+        className="max-w-5xl mx-auto flex overflow-x-auto hide-scrollbar p-6 rounded-2xl space-x-10
+                   lg:grid lg:grid-cols-2 gap- lg:gap-12 lg:overflow-visible 
                 
       "
       >
         {project.map(({ name, description, image, url, githubUrl, technologies }, index) => (
           <article
             key={index}
-            className="bg-[#17171f] rounded-xl hover:shadow-lg duration-300 overflow-hidden flex flex-col p-4 mb-4 shadow-2xl hover:shadow-pink-200/50 hover:scale-105 transition-transform
-            w-80  sm:w-96 lg:w-96 flex-shrink-0 lg:mb-0"
+            className="bg-[#17171f] rounded-xl hover:shadow-lg duration-300 overflow-hidden flex flex-col p-4 mb-4 shadow-2xl hover:shadow-blue-400/20 hover:scale-105 transition-transform
+                       w-80 sm:w-96 flex-shrink-0 lg:w-full lg:flex-shrink lg:mb-0"
           >
             <img
               src={image}
@@ -51,7 +51,7 @@ export default function Project() {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-purple-100  rounded-lg bg-gradient-to-r from-pink-600 to-[#52168a] p-2 hover:scale-105 transition-transform"
+                  className="inline-block bg-blue-400/25 backdrop-blur-lg border border-blue-400/20 shadow- shadow-blue-400/30 hover:bg-blue-500/20 text-white rounded-lg py-2 px-4 hover:scale-105 transition-transform"
                 >
                   Live Demo
                 </a>
@@ -60,7 +60,7 @@ export default function Project() {
                   href={githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-purple-100 rounded-lg border-2 border-[#32134e] hover:border-purple-700 py-2 px-4 hover:scale-110 transition-transform"
+                  className="inline-block text-purple-100 rounded-lg border-2 border-blue-400/40 hover:border-blue-500 py-2 px-4 hover:scale-110 transition-transform"
                 >
                   GitHub
                 </a>

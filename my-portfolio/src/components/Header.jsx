@@ -34,49 +34,52 @@ export default function Header({}) {
   return (
   <div
   id="home"
-  style={bgStyle}
-  className="flex items-center justify-center min-h-screen relative"
+  // style={bgStyle}
+  className="flex items-center justify-center min-h-screen relative mt-10"
 >
   <div className="
       flex flex-col sm:flex-row 
       items-center sm:items-center 
-      justify-center w-full pt-10 px-8
+      justify-center w-full px-8
+
+      
     "
   >
-    <div 
-      className=" absolute bottom-0 right-1 w-64 h-64 bg-purple-600/40 rounded-full opacity-20 blur-lg hidden sm:block"
+    {/* <div 
+      className=" absolute bottom-40 right-1 w-84 h-74 bg-blue-500/40 rounded-full opacity-20 blur-lg hidden sm:block"
       aria-hidden="true"
     ></div>
     <div 
-      className=" absolute top-70 left-60 w-44 h-44 bg-pink-600/40 rounded-full opacity-20 blur-lg hidden sm:block"
+      className=" absolute bottom-34 right-0 w-44 h-44 bg-amber-500/40 rounded-full opacity-20 blur-lg hidden sm:block"
       aria-hidden="true"
     ></div>
-      
+       */}
     {/* Mobile-only image */}
     <img
       src={pic3}
       alt="pic"
-      className="w-64 h-64 rounded-full object-cover ring-2 ring-pink-800 mt-14 mb-6 drop-shadow-[0_0_50px_#ec4899]  block sm:hidden"
+      className="w-64 h-64 rounded-full object-cover ring-2 ring-[#3b82f6] mt-14 mb-8 drop-shadow-[0_0_50px_#3b82f6]  block sm:hidden"
     />
     
     <motion.div
-      className="mx-auto w-full max-w-[1050px] items-center sm:text-center"
+      className="w-full items-center mt-4"
       variants={containerVariants}
       initial="hidden"
       animate="show"
     >
       <motion.h1
-        className="text-purple-100 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+        className="text-white text-2xl sm:text-4xl md:text-5xl font-bold leading-tight"
         variants={childVariants}
       >
         Hi👋,
         <br />
         <motion.span variants={childVariants}>I'm Priscillia,</motion.span>
         <br />
-        <motion.span variants={childVariants} className="text-pink-600">
+        <motion.span variants={childVariants} className="text-blue-400">
           A Front-End Developer.
           <br />
-        I craft clean interfaces & code
+          <span className="text-slate-300">I craft clean interfaces & code</span>
+        
           
         </motion.span>
       </motion.h1>
@@ -95,7 +98,7 @@ export default function Header({}) {
         <a
           href="#about"
           style={buttonStyle}
-          className="px-6 py-3 font-bold rounded-full  items-center gap-2 bg-pink-600 text-white hover:bg-pink-700 transition text-sm hidden sm:flex flex-col"
+          className="px-6 py-3 font-bold rounded-full  items-center gap-2 text-white hover:bg-transition text-sm hidden sm:flex flex-col"
         >
           Learn about what I do
           <ArrowIcon className="w-4 h-4" />

@@ -13,17 +13,17 @@ export const style = {
 
 const About = () => {
   return (
-    <div style={style} className=" flex flex-col">
+    <div  className="flex flex-col">
       <div
         id="about"
-        className="flex flex-col-reverse lg:flex-row justify-around gap-4 py-24 m-auto px-8 lg:px-18"
+        className="flex flex-col-reverse lg:flex-row justify-around gap-4 py-24 m-auto px-8 lg:px-10"
       >
-        <div className=" w-full lg:w-[70%]">
-          <h1 className="text-purple-100 text-2xl md:text-4xl font-extrabold text-center sm:text-left">
+        <div className=" w-full lg:w-[50%] ">
+          <h1 className="text-white text-2xl md:text-4xl font-extrabold text-center sm:text-left md:mt-8">
             Meet the Developer
           </h1>{" "}
           <br />
-          <p className="text-purple-200 text-[14px] md:text-base leading-relaxed mt-4">
+          <p className="text-slate-300 text-[14px] md:text-base leading-relaxed mt-4">
             Hi! I'm Priscillia Osumaka, a passionate Frontend Web Developer with
             a strong focus on creating clean, responsive, and user-centric web
             applications. I hold a B.Sc. in Political Science, but my true
@@ -42,11 +42,11 @@ const About = () => {
             always pushing myself to the next level.
           </p>
           <br /> <br />
-          <h1 className="text-purple-300 text-2xl md:text-3xl font-bold mb-4">
+          <h1 className="text-white text-2xl md:text-3xl font-bold mb-4">
             Fun Facts
           </h1>
          
-          <ul className="text-purple-200 text-[14px] md:text-base list-disc pl-6 space-y-2">
+          <ul className="text-slate-300 text-[14px] md:text-base list-disc pl-6 space-y-2">
             <li>
               🎓 I studied Political Science, but found my true passion in
               coding and design.
@@ -66,11 +66,11 @@ const About = () => {
           </ul>
         </div>
 
-        <div className="w-full lg:w-[50%] flex items-center justify-center">
+        <div className="w-full lg:w-[50%] flex items-center justify-center sm:pt-10">
           <img
             src={pic3}
             alt="pic"
-            className="w-72 h-72 md:w-[500px] md:h-[500px] lg:w-[650px] lg:h-[650px] rounded-full object-cover ring-2 ring-pink-800 drop-shadow-[0_0_20px_#ec4899]   hidden sm:block"
+            className="w-72 h-72 md:w-[500px] md:h-[500px] lg:w-[650px] lg:h-[650px] rounded-full object-cover ring-2 ring-blue-400 drop-shadow-[0_0_20px_#3b82f6]   hidden sm:block"
           />
         </div>
         

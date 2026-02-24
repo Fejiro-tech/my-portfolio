@@ -14,14 +14,14 @@ function App() {
     <>
       <Toaster position="top-center"/>
       <Nav />
-      <div style={bgStyle} className=" pt-4 lg:pt-12">
+      <div  className="bg-black/80 backdrop-blur-md max-w-340 mx-auto p-4">
         <Header />
         <About />
         <Skills />
         <Project />
         <Contact />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

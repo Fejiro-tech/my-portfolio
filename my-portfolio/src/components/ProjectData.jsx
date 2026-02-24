@@ -25,7 +25,7 @@ const project = [
     {
     name: "OrderEats - Food Ordering App",
     description:
-      "A scalable food ordering application built uising React, featuring dynamic routing and centralized cart state management with Context API. The app includes real-time cart updates, persistent storage via localStorage, and Paystack payment integration (test mode) for secure checkout simulation. This project demonstrates strong component architecture, state management, and seamless user experience from product selection to payment processing.",
+      "A scalable food ordering application built uising React, featuring dynamic routing and centralized cart state management with Context API. The app includes real-time cart updates, persistent storage via localStorage, and Paystack payment integration (test mode) for secure checkout simulation.",
     url: "https://ordereat.vercel.app",
     githubUrl: "https://github.com/Fejiro-tech/OrderEats-.git",
     technologies: ["React | TailwindCSS | Paystack"],
