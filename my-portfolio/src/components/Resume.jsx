@@ -9,7 +9,6 @@ export default function Resume() {
         rel="noopener noreferrer"
       >
         <button
-          // style={buttonStyle}
           className="px-6 py-2 text-purple-200 font-extrabold rounded-3xl border border-gray-500 transform transition duration-300 hover:scale-105 hover:border-pink-200 hover:text-pink-300"
         >
           View Resume

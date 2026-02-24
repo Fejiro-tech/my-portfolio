@@ -6,6 +6,8 @@ import ticketflow from "../assets/ticketflow.png";
 import cryptoImage from "../assets/crypto.png";
 import facebook from "../assets/facebook.png";
 import naijastyleImg from "../assets/fashionapp.png"
+import ordereatImg from "../assets/ordereat.png"
+import ordereatsImg from "../assets/ordereats.png"
 
 const project = [
 
@@ -19,6 +21,18 @@ const project = [
     year: 2025,
     image: payrail,
   },
+
+    {
+    name: "OrderEats - Food Ordering App",
+    description:
+      "A scalable food ordering application built uising React, featuring dynamic routing and centralized cart state management with Context API. The app includes real-time cart updates, persistent storage via localStorage, and Paystack payment integration (test mode) for secure checkout simulation. This project demonstrates strong component architecture, state management, and seamless user experience from product selection to payment processing.",
+    url: "https://ordereat.vercel.app",
+    githubUrl: "https://github.com/Fejiro-tech/OrderEats-.git",
+    technologies: ["React | TailwindCSS | Paystack"],
+    year: 2026,
+    image: ordereatsImg,
+  },
+
   {
       name: "TicketFlow",
       description:
@@ -36,7 +50,7 @@ const project = [
       "Naija Style Co is a responsive Next.js fashion storefront showcasing Nigerian traditional and modern outfits. It features category-based browsing, dynamic product pages, size selection, and a cart system powered by React Context API. The UI is clean, fast, and fully optimized for mobile.",
     url: "https://my-naija-style.vercel.app/",
     githubUrl: "https://github.com/Fejiro-tech/NaijaStyle.git",
-    technologies: ["Nextjs", "Tailwind CSS"],
+    technologies: ["Nextjs | Tailwind CSS"],
     year: 2025,
     image: naijastyleImg,
 
@@ -64,17 +78,6 @@ const project = [
   // },
 
   {
-    name: "Natours Project",
-    description:
-      "A visually engaging landing page for a fictional travel company, designed to showcase high-end tour packages. It features a clean, responsive layout and modern UI elements that emphasize branding and visual storytelling.",
-    url: "https://fejiro-tech.github.io/Natours-project/",
-    githubUrl: "https://github.com/Fejiro-tech/Natours-project.git",
-    technologies: [""],
-    year: 2025,
-    image: natoursImage,
-  },
-
-  {
     name: "Movie App",
     description:
       "A sleek and responsive React application that lets users search for movies, view detailed information, and explore trending titles using real-time data from a public movie API. Built with Tailwind CSS for a clean UI and optimized for performance.",
@@ -84,21 +87,6 @@ const project = [
     year: 2024,
     image: movieImage,
   },
-
-
-  // {
-  //   name: "Food App",
-  //   description:
-  //     "A recipe discovery app that enables users to search for a wide variety of food recipes using a public API. Users can view detailed recipes including ingredients, preparation steps, and nutritional info. This project highlights API consumption, dynamic rendering of search results, and a visually appealing layout built with React and Tailwind CSS.",
-  //   url: "",
-  //   githubUrl: "https://github.com/Fejiro-tech/Food-app.git",
-  //   technologies: ["React", "API", "Tailwind CSS"],
-  //   year: 2024,
-  //   image: foodImage,
-
-  // },
-
-
   
 ];
 

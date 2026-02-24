@@ -9,5 +9,3 @@ export default function Nav() {
     </div>
   );
 }
-
-// px-6 lg:px-18
