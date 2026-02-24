@@ -40,7 +40,7 @@ export default function Header({}) {
   <div className="
       flex flex-col sm:flex-row 
       items-center sm:items-center 
-      justify-center w-full px-8
+      justify-center w-full pt-14 px-8
 
       
     "
@@ -58,7 +58,7 @@ export default function Header({}) {
     <img
       src={pic3}
       alt="pic"
-      className="w-64 h-64 rounded-full object-cover ring-2 ring-[#3b82f6] mt-14 mb-8 drop-shadow-[0_0_50px_#3b82f6]  block sm:hidden"
+      className="w-64 h-64 rounded-full object-cover ring-2 ring-[#3b82f6] mt-14 mb-8 drop-shadow-[0_0_35px_#3b82f6]  block sm:hidden"
     />
     
     <motion.div
@@ -75,12 +75,20 @@ export default function Header({}) {
         <br />
         <motion.span variants={childVariants}>I'm Priscillia,</motion.span>
         <br />
-        <motion.span variants={childVariants} className="text-blue-400">
+        <motion.span
+          variants={childVariants}
+          className="text-blue-400"
+        >
           A Front-End Developer.
-          <br />
-          <span className="text-slate-300">I craft clean interfaces & code</span>
-        
-          
+        </motion.span>
+
+        <br />
+
+        <motion.span
+          variants={childVariants}
+          className="text-slate-300"
+        >
+          I craft clean interfaces & code
         </motion.span>
       </motion.h1>
 
