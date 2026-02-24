@@ -14,7 +14,7 @@ function App() {
     <>
       <Toaster position="top-center"/>
       <Nav />
-      <div  className="bg-black/80 backdrop-blur-md max-w-340 mx-auto p-4">
+      <div  className="bg-black/80 backdrop-blur-md max-w-340 mx-auto ">
         <Header />
         <About />
         <Skills />
