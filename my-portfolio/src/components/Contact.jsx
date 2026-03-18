@@ -57,7 +57,7 @@ export default function Contact() {
     >
       <div className="max-w-3xl mx-auto text-center py-10 px-4">
         <h2 className="text-2xl md:text-4xl font-bold mb-4 flex justify-center items-center text-white mt-8">Get in Touch<span className="w-2 h-2 bg-green-400 inline-block rounded-lg ml-2 mt-1 animate-pulse"></span></h2>
-        <p className="text-gray-300 mb-12 text-[14px] md:text-[16px] leading-relaxed ">
+        <p className="text-slate-300 mb-12 text-[14px] md:text-[16px] leading-relaxed ">
           Interested in working together? Let's connect. Fill out the form below
           or reach me directly through social media.
         </p>

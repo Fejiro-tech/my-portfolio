@@ -18,9 +18,9 @@ export default function CustomButton() {
         <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
-              <X size={24} className="text-blue-400" />
+              <X size={24} className="text-[#3b82f6]" />
             ) : (
-              <Menu size={24} className="text-blue-400 cursor-pointer" />
+              <Menu size={24} className="text-[#3b82f6] cursor-pointer" />
             )}
           </button>
         </div>

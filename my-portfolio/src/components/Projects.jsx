@@ -12,7 +12,7 @@ export default function Project() {
         My Projects
       </h1>
 
-      <p className="text-slate-300 text-center text-am md:text-base leading-relaxed md:mt-8 sm:mt-1 m-8">
+      <p className="text-slate-300 text-center text-sm md:text-base leading-relaxed md:mt-8 sm:mt-1 mb-8">
         A look at my latest frontend work—where performance, accessibility, and
         visual polish come together seamlessly.
       </p>
@@ -35,7 +35,7 @@ export default function Project() {
               style={{
                 maxWidth: "500px",
               }}
-              className="w-full h-52 object-fill rounded-2xl bg-[#1e1e1e]"
+              className="w-full h-52 object-cover rounded-2xl bg-[#1e1e1e]"
             />
 
             <div className="p-2 md:p-4 flex flex-col flex-grow ">
