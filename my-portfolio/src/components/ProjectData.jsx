@@ -6,7 +6,7 @@ import ticketflow from "../assets/ticketflow.png";
 import cryptoImage from "../assets/crypto.png";
 import facebook from "../assets/facebook.png";
 import naijastyleImg from "../assets/fashionapp.png"
-import ordereatImg from "../assets/ordereat.png"
+import codebuddy from "../assets/mycodebuddy.png"
 import ordereatsImg from "../assets/ordereats.png"
 
 const project = [
@@ -45,6 +45,18 @@ const project = [
   },
 
   {
+    name: "CodeBuddy",
+    description:
+      "An AI-powered coding assistant that lets users ask programming questions and get instant answers in a clean, modern chat interface, and is powered by Grok API,",
+    url: "https://mycodebuddy.vercel.app/",
+    githubUrl: "https://github.com/Fejiro-tech/CodeBuddy.git",
+    technologies: ["Nextjs | Tailwind CSS | API"],
+    year: 2026,
+    image: codebuddy,
+
+  },
+
+  {
     name: "Naija Style Co.",
     description:
       "Naija Style Co is a responsive Next.js fashion storefront showcasing Nigerian traditional and modern outfits. It features category-based browsing, dynamic product pages, size selection, and a cart system powered by React Context API. The UI is clean, fast, and fully optimized for mobile.",
@@ -77,16 +89,16 @@ const project = [
   //   image: facebook,
   // },
 
-  {
-    name: "Movie App",
-    description:
-      "A sleek and responsive React application that lets users search for movies, view detailed information, and explore trending titles using real-time data from a public movie API. Built with Tailwind CSS for a clean UI and optimized for performance.",
-    url: "",
-    githubUrl: "",
-    technologies: ["JavaScript"],
-    year: 2024,
-    image: movieImage,
-  },
+  // {
+  //   name: "Movie App",
+  //   description:
+  //     "A sleek and responsive React application that lets users search for movies, view detailed information, and explore trending titles using real-time data from a public movie API. Built with Tailwind CSS for a clean UI and optimized for performance.",
+  //   url: "",
+  //   githubUrl: "",
+  //   technologies: ["JavaScript"],
+  //   year: 2024,
+  //   image: movieImage,
+  // },
   
 ];
 
