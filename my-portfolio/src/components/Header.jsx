@@ -21,7 +21,7 @@ export default function Header({}) {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.6, // delay between each child animation
+        staggerChildren: 0.6, 
       },
     },
   };
@@ -34,7 +34,6 @@ export default function Header({}) {
   return (
   <div
   id="home"
-  // style={bgStyle}
   className="flex items-center justify-center min-h-screen relative mt-10"
 >
   <div className="
@@ -45,20 +44,12 @@ export default function Header({}) {
       
     "
   >
-    {/* <div 
-      className=" absolute bottom-40 right-1 w-84 h-74 bg-blue-500/40 rounded-full opacity-20 blur-lg hidden sm:block"
-      aria-hidden="true"
-    ></div>
-    <div 
-      className=" absolute bottom-34 right-0 w-44 h-44 bg-amber-500/40 rounded-full opacity-20 blur-lg hidden sm:block"
-      aria-hidden="true"
-    ></div>
-       */}
     {/* Mobile-only image */}
     <img
       src={pic3}
       alt="pic"
-      className="w-64 h-64 rounded-full object-cover ring-2 ring-[#3b82f6] mt-14 mb-8 drop-shadow-[0_0_35px_#3b82f6]  block sm:hidden"
+      className="w-64 h-64 rounded-full object-cover ring-2 ring-[#3b82f6] mt-14 mb-8 block sm:hidden"
+      style={{ boxShadow: "0 0 35px #3b82f6" }}
     />
     
     <motion.div

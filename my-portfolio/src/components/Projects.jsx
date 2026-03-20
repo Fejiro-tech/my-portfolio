@@ -27,14 +27,11 @@ export default function Project() {
           <article
             key={index}
             className="bg-[#17171f] rounded-xl hover:shadow-lg duration-300 overflow-hidden flex flex-col p-4 mb-4 shadow-2xl hover:shadow-blue-400/20 hover:scale-105 transition-transform
-                       w-80 sm:w-96 flex-shrink-0 lg:w-full lg:flex-shrink lg:mb-0"
+           w-[95vw] sm:w-96 flex-shrink-0 lg:w-full lg:flex-shrink lg:mb-0"
           >
             <img
               src={image}
               alt={`${name} Screenshot`}
-              style={{
-                maxWidth: "500px",
-              }}
               className="w-full h-52 object-cover rounded-2xl bg-[#1e1e1e]"
             />
 
