@@ -18,25 +18,23 @@ export default function Project() {
       </p>
 
       <div 
-        className="max-w-5xl mx-auto flex overflow-x-auto hide-scrollbar p-6 rounded-2xl space-x-10
-                   lg:grid lg:grid-cols-2 gap- lg:gap-12 lg:overflow-visible 
-                
-      "
+        className="max-w-5xl mx-auto flex overflow-x-auto hide-scrollbar px-4 py-6 rounded-2xl space-x-6
+                   lg:grid lg:grid-cols-2 lg:gap-12 lg:overflow-visible lg:space-x-0"
       >
         {project.map(({ name, description, image, url, githubUrl, technologies }, index) => (
           <article
             key={index}
-            className="bg-[#17171f] rounded-xl hover:shadow-lg duration-300 overflow-hidden flex flex-col p-4 mb-4 shadow-2xl hover:shadow-blue-400/20 hover:scale-105 transition-transform
-           w-[95vw] sm:w-96 flex-shrink-0 lg:w-full lg:flex-shrink lg:mb-0"
+            className="bg-[#17171f] rounded-xl duration-300 overflow-hidden flex flex-col p-4 mb-4 shadow-2xl hover:shadow-blue-400/20 hover:scale-105 transition-transform
+                       w-[78vw] sm:w-80 flex-shrink-0 lg:w-full lg:flex-shrink lg:mb-0"
           >
             <img
               src={image}
               alt={`${name} Screenshot`}
-              className="w-full h-52 object-cover rounded-2xl bg-[#1e1e1e]"
+              className="w-full h-40 sm:h-52 object-cover rounded-2xl bg-[#1e1e1e]"
             />
 
-            <div className="p-2 md:p-4 flex flex-col flex-grow ">
-              <h1 className="text-xl font-semibold mb-3 text-white ">
+            <div className="p-2 md:p-4 flex flex-col flex-grow">
+              <h1 className="text-xl font-semibold mb-3 text-white">
                 {name}
               </h1>
               <p className="text-gray-300 flex-grow text-[12px] md:text-sm">{description}</p>
@@ -48,7 +46,7 @@ export default function Project() {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-blue-400/25 backdrop-blur-lg border border-blue-400/20 shadow- shadow-blue-400/30 hover:bg-blue-500/20 text-white rounded-lg py-2 px-4 hover:scale-105 transition-transform"
+                  className="inline-block bg-blue-400/25 backdrop-blur-lg border border-blue-400/20 shadow-blue-400/30 hover:bg-blue-500/20 text-white rounded-lg py-2 px-4 hover:scale-105 transition-transform"
                 >
                   Live Demo
                 </a>
@@ -67,7 +65,5 @@ export default function Project() {
         ))}
       </div>
     </section>
-
-   
   );
 }
