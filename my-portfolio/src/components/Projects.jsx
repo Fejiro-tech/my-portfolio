@@ -30,7 +30,7 @@ export default function Project() {
             <img
               src={image}
               alt={`${name} Screenshot`}
-              className="w-full h-40 sm:h-52 object-cover rounded-2xl bg-[#1e1e1e]"
+              className="w-full h-40 sm:h-52 object-fill rounded-2xl bg-[#1e1e1e]"
             />
 
             <div className="p-2 md:p-4 flex flex-col flex-grow">
