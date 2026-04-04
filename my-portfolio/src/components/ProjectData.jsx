@@ -8,6 +8,7 @@ import facebook from "../assets/facebook.png";
 import naijastyleImg from "../assets/fashionapp.png"
 import codebuddy from "../assets/mycodebuddy.png"
 import ordereatsImg from "../assets/ordereats.png"
+import swiftImg from "../assets/swift.png"
 
 const project = [
 
@@ -22,6 +23,17 @@ const project = [
     image: payrail,
   },
 
+  {
+      name: "TicketFlow",
+      description:
+        "TicketFlow is a responsive and efficient ticket management system that helps users create, track, and resolve tickets effortlessly.",
+      url: "https://ticket-flow-six.vercel.app/",
+      githubUrl: "https://github.com/Fejiro-tech/TicketFlow.git",
+      technologies: ["React | Tailwind CSS"],
+      year: 2025,
+      image: ticketflow,
+  },
+
     {
     name: "OrderEats - Food Ordering App",
     description:
@@ -34,14 +46,14 @@ const project = [
   },
 
   {
-      name: "TicketFlow",
-      description:
-        "TicketFlow is a responsive and efficient ticket management system that helps users create, track, and resolve tickets effortlessly.",
-      url: "https://ticket-flow-six.vercel.app/",
-      githubUrl: "https://github.com/Fejiro-tech/TicketFlow.git",
-      technologies: ["React | Tailwind CSS"],
-      year: 2025,
-      image: ticketflow,
+    name: "Swift Logistics",
+    description:
+      "A full-stack logistcs tracking platform with a user interface for real time shipment tracking and a powerful admin dashboard (shown in the image) for creating, updating, and managing shipments. Demonstrates responsive design, full-stack development, and real world business logic.",
+    url: "https://swiftlogistic.vercel.app",
+    githubUrl: "https://github.com/Fejiro-tech/Swift-logistics.git",
+    technologies: ["Nextjs | Supabase | Tailwind CSS"],
+    year: 2025,
+    image: swiftImg,
   },
 
   {
@@ -67,16 +79,16 @@ const project = [
     image: naijastyleImg,
 
   },
-  {
-    name: "Crypto Live-Tracker",
-    description:
-      "CryptoLive is a real-time cryptocurrency tracking web app that allows users to monitor live rates of Bitcoin, Ethereum, and Dogecoin. The app displays accurate market prices and updates instantly to keep users informed of crypto fluctuations in real time.",
-    url: "https://crypto-live-tracker-app.vercel.app/",
-    githubUrl: "https://github.com/Fejiro-tech/TicketFlow.git",
-    technologies: ["React | API |  CSS"],
-    year: 2025,
-    image: cryptoImage,
-  },
+  // {
+  //   name: "Crypto Live-Tracker",
+  //   description:
+  //     "CryptoLive is a real-time cryptocurrency tracking web app that allows users to monitor live rates of Bitcoin, Ethereum, and Dogecoin. The app displays accurate market prices and updates instantly to keep users informed of crypto fluctuations in real time.",
+  //   url: "https://crypto-live-tracker-app.vercel.app/",
+  //   githubUrl: "https://github.com/Fejiro-tech/TicketFlow.git",
+  //   technologies: ["React | API |  CSS"],
+  //   year: 2025,
+  //   image: cryptoImage,
+  // },
 
   // {
   //   name: "Facebook",
@@ -87,17 +99,6 @@ const project = [
   //   technologies: ["React", "API", "Tailwind CSS"],
   //   year: 2024,
   //   image: facebook,
-  // },
-
-  // {
-  //   name: "Movie App",
-  //   description:
-  //     "A sleek and responsive React application that lets users search for movies, view detailed information, and explore trending titles using real-time data from a public movie API. Built with Tailwind CSS for a clean UI and optimized for performance.",
-  //   url: "",
-  //   githubUrl: "",
-  //   technologies: ["JavaScript"],
-  //   year: 2024,
-  //   image: movieImage,
   // },
   
 ];

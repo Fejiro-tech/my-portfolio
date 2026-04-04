@@ -25,7 +25,7 @@ export default function Project() {
           <article
             key={index}
             className="bg-[#17171f] rounded-xl duration-300 overflow-hidden flex flex-col p-4 mb-4 shadow-2xl hover:shadow-blue-400/20 hover:scale-105 transition-transform
-                       w-[78vw] sm:w-80 flex-shrink-0 lg:w-full lg:flex-shrink lg:mb-0"
+                        w-[78vw] sm:w-80 flex-shrink-0 lg:w-full lg:flex-shrink lg:mb-0"
           >
             <img
               src={image}
