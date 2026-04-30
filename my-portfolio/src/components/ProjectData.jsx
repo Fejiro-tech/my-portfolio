@@ -8,7 +8,7 @@ import facebook from "../assets/facebook.png";
 import naijastyleImg from "../assets/fashionapp.png"
 import codebuddy from "../assets/mycodebuddy.png"
 import ordereatsImg from "../assets/ordereats.png"
-import swiftImg from "../assets/swift.png"
+import veeslogisticsImg from "../assets/veeslogistics.png"
 
 const project = [
 
@@ -45,16 +45,16 @@ const project = [
     image: ordereatsImg,
   },
 
-  // {
-  //   name: "Swift Logistics",
-  //   description:
-  //     "A full-stack logistcs tracking platform with a user interface for real time shipment tracking and a powerful admin dashboard (shown in the image) for creating, updating, and managing shipments. Demonstrates responsive design, full-stack development, and real world business logic.",
-  //   url: "https://swiftlogistic.vercel.app",
-  //   githubUrl: "https://github.com/Fejiro-tech/Swift-logistics.git",
-  //   technologies: ["Nextjs | Supabase | Tailwind CSS"],
-  //   year: 2025,
-  //   image: swiftImg,
-  // },
+  {
+    name: "Vee's Logistics",
+    description:
+      "A full-stack logistcs tracking platform with a user interface for real time shipment tracking and a powerful admin dashboard (shown in the image) for creating, updating, and managing shipments. Demonstrates responsive design, full-stack development, and real world business logic.",
+    url: "https://www.veeslogistics.com.ng",
+    githubUrl: "https://github.com/Fejiro-tech/veeslogistics.git",
+    technologies: ["Nextjs | Supabase | Tailwind CSS"],
+    year: 2025,
+    image: veeslogisticsImg,
+  },
 
   {
     name: "CodeBuddy",
