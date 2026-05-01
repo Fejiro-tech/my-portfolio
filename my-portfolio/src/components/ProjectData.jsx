@@ -8,7 +8,7 @@ import facebook from "../assets/facebook.png";
 import naijastyleImg from "../assets/fashionapp.png"
 import codebuddy from "../assets/mycodebuddy.png"
 import ordereatsImg from "../assets/ordereats.png"
-import veeslogisticsImg from "../assets/veeslogistics.png"
+import veeslogisticsImg from "../assets/logistics.png"
 
 const project = [
 
