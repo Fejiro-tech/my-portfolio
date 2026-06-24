@@ -1,6 +1,6 @@
 import React from "react";
 import pics from "../assets/codingpics.jpeg";
-import pic3 from "../assets/pic3.JPG";
+import pic3 from "../assets/pic3.jpg";
 import Resume from "./Resume";
 
 export const style = {
@@ -16,14 +16,14 @@ const About = () => {
     <div  className="flex flex-col">
       <div
         id="about"
-        className="flex flex-col-reverse lg:flex-row justify-around gap-4 py-24 m-auto px-8 lg:px-10"
+        className="flex flex-col-reverse lg:flex-row justify-around gap-4 py-24 m-auto px-8 lg:px-10 font-['Cormorant_Garamond']"
       >
         <div className=" w-full lg:w-[50%] ">
           <h1 className="text-white text-2xl md:text-4xl font-extrabold text-center sm:text-left md:mt-8">
             Meet the Developer
           </h1>{" "}
           <br />
-          <p className="text-slate-300 text-[14px] md:text-base leading-relaxed mt-4">
+          <p className="text-slate-300 text-[14px] md:text-base leading-relaxed mt-4 font-sans">
             Hi! I'm Priscillia Osumaka, a passionate Frontend Web Developer with
             a strong focus on creating clean, responsive, and user-centric web
             applications. I hold a B.Sc. in Political Science, but my true
@@ -46,7 +46,7 @@ const About = () => {
             Fun Facts
           </h1>
          
-          <ul className="text-slate-300 text-[14px] md:text-base list-disc pl-6 space-y-2">
+          <ul className="text-slate-300 text-[14px] md:text-base list-disc pl-6 space-y-2 font-sans">
             <li>
               🎓 I studied Political Science, but found my true passion in
               coding and design.

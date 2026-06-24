@@ -1,156 +1,230 @@
+"use client";
+
 import { useState } from "react";
-import toast from "react-hot-toast";
+import { motion } from "framer-motion";
+import {
+  Phone,
+  Mail,
+  MessageCircle,
+  Github,
+  Linkedin,
+  MapPin,
+} from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+
+const fadeUp = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+    },
+  },
+};
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [status, setStatus] = useState("");
-  const [errorMsg, setErrorMsg] = useState("")
+  const [open, setOpen] = useState(false);
 
-  // Handle form input changes
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  const whatsappNumber = "2347065520120";
 
-  // Handle form submission
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setStatus("");
-
-    const response = await fetch("https://formspree.io/f/xgvkgwkv", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-
-    if (!formData.name || !formData.email || !formData.message) {
-      toast.error("Please fill up all fields");
-      setIsSubmitting(false);
-      return
-    }
-
-    if (response.ok) {
-      setStatus("Thank you for reaching out! I'll get back to you soon.");
-      setFormData({ name: "", email: "", message: "" });
-    } else {
-      setStatus("Oops, something went wrong. Please try again later.");
-    }
-
-    setIsSubmitting(false);
-  };
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    "Hi Priscillia, I came across your portfolio and would like to discuss a project."
+  )}`;
 
   return (
     <section
       id="contact"
-      className="px-10 py-16 text-slate-300"
+      className="relative py-24 px-8 lg:px-10 text-white"
     >
-      <div className="max-w-3xl mx-auto text-center py-10 px-4">
-        <h2 className="text-2xl md:text-4xl font-bold mb-4 flex justify-center items-center text-white mt-8">Get in Touch<span className="w-2 h-2 bg-green-400 inline-block rounded-lg ml-2 mt-1 animate-pulse"></span></h2>
-        <p className="text-slate-300 mb-12 text-[14px] md:text-[16px] leading-relaxed ">
-          Interested in working together? Let's connect. Fill out the form below
-          or reach me directly through social media.
-        </p>
+      {/* Floating Chat Button */}
+      <div className="fixed bottom-8 right-8 z-50">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setOpen(!open)}
+          className="bg-green-500 p-4 rounded-full shadow-xl"
+        >
+          <MessageCircle size={24} />
+        </motion.button>
 
-
-        <form onSubmit={handleSubmit} className="space-y-6 ">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full p-3 rounded-md bg-[#252540] border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
-          />
-        
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-3 rounded-md bg-[#252540] border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
-          />
-          <textarea
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full p-3 rounded-md bg-[#252540] border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
-          />
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="bg-blue-400/15 backdrop-blur-lg border border-blue-400/20 shadow-md shadow-blue-400/30 hover:bg-blue-500/20 text-white px-6 py-3 rounded-md font-bold hover:scale-105 transition-transform cursor-pointer"
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="absolute bottom-16 right-0 w-72 bg-slate-900 border border-slate-700 rounded-xl shadow-xl p-4"
           >
-            {isSubmitting ? "Sending..." : "Send Message"}
-          </button>
-        </form>
+            <h3 className="font-semibold text-lg mb-4">
+              Let's Connect 👋
+            </h3>
 
-        {status && (
-          <p
-            className={`mt-6 ${
-              status.includes("error")
-                ? "text-red-500 font-bold"
-                : "text-green-500 font-bold"
-            }`}
-          >
-            {status}
-          </p>
+            <div className="space-y-3">
+              <a
+                href="tel:+2347065520120"
+                className="flex items-center gap-3 hover:text-blue-400 transition"
+              >
+                <Phone size={18} />
+                Schedule a Call
+              </a>
+
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-green-400 transition"
+              >
+                <FaWhatsapp size={18} />
+                WhatsApp Chat
+              </a>
+
+              <a
+                href="mailto:priscilliaosumaka@yahoo.com"
+                className="flex items-center gap-3 hover:text-red-400 transition"
+              >
+                <Mail size={18} />
+                Send an Email
+              </a>
+            </div>
+          </motion.div>
         )}
+      </div>
 
-        <div className="flex justify-center mt-14 space-x-6">
+      <div className="max-w-5xl mx-auto">
+        {/* Header */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="text-center mb-14"
+        >
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 font-['Cormorant_Garamond']">
+            Let's Work Together
+          </h2>
+
+          <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto ">
+            I'm available for freelance projects, frontend development
+            opportunities, and collaborations. Feel free to reach out through
+            any of the channels below.
+          </p>
+        </motion.div>
+
+        {/* Contact Cards */}
+        <div className="grid md:grid-cols-3 gap-6">
+          <motion.a
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            whileHover={{ y: -5 }}
+            href="tel:+2347065520120"
+            className="bg-slate-800 border border-slate-700 rounded-xl p-6"
+          >
+            <Phone size={28} className="mb-4 text-blue-400" />
+
+            <h3 className="text-lg md:text-xl font-semibold mb-2 font-['Cormorant_Garamond'] tracking-wide">
+              Schedule a Call
+            </h3>
+
+            <p className="text-gray-400 text-sm md:text-base">
+              Let's discuss your project requirements.
+            </p>
+          </motion.a>
+
+          <motion.a
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            whileHover={{ y: -5 }}
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-slate-800 border border-slate-700 rounded-xl p-6"
+          >
+            <FaWhatsapp size={28} className="mb-4 text-green-400" />
+
+            <h3 className="text-lg md:text-xl font-semibold mb-2 font-['Cormorant_Garamond'] tracking-wide">
+              WhatsApp
+            </h3>
+
+            <p className="text-gray-400 text-sm md:text-base">
+              Get quick responses and project updates.
+            </p>
+          </motion.a>
+
+          <motion.a
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            whileHover={{ y: -5 }}
+            href="mailto:priscilliaosumaka@yahoo.com"
+            className="bg-slate-800 border border-slate-700 rounded-xl p-6"
+          >
+            <Mail size={28} className="mb-4 text-red-400" />
+
+            <h3 className="text-lg md:text-xl font-semibold mb-2 font-['Cormorant_Garamond'] tracking-wide">
+              Email
+            </h3>
+
+            <p className="text-gray-400 text-sm md:text-base">
+              For detailed discussions and inquiries.
+            </p>
+          </motion.a>
+        </div>
+
+        {/* Social Links */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="flex justify-center gap-8 mt-14"
+        >
           <a
             href="https://github.com/Fejiro-tech"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition"
           >
-            <img
-              src="./github.svg"
-              alt="GitHub"
-              className="w-10 h-10 rounded-md hover:scale-110 transition-transform bg-white"
-            />
+            <Github size={32} />
           </a>
+
           <a
             href="https://linkedin.com/in/priscilliaosumaka"
             target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="./linkedin.svg"
-              alt="LinkedIn"
-              className="w-10 h-10 rounded-md hover:scale-110 transition-transform bg-white"
-            />
-          </a>
-          <a
-            href="mailto:priscilliaosumaka@yahoo.com?subject=Interested%20in%20working%20with%20you&body=Hi%20Priscillia%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20I%27m%20interested%20in%20collaborating%20with%20you.%0A%0ARegards%2C%0A"
-            
             rel="noopener noreferrer"
+            className="hover:scale-110 transition"
           >
-            <img
-              src="/mail.svg"
-              alt="Email"
-              className="w-10 h-10 rounded-md hover:scale-110 transition-transform bg-white"
-            />
+            <Linkedin size={32} />
           </a>
-        </div>
 
-        <div className="space-y-0.5 text-[14px] md:text-[16px] text-gray-300 mt-4">
+          <a
+            href="mailto:priscilliaosumaka@yahoo.com"
+            className="hover:scale-110 transition"
+          >
+            <Mail size={32} />
+          </a>
+        </motion.div>
 
-          <p>Phone: <a href="tel:+2347065520120" className="text-blue-400 hover:underline">+234 706 552 0120</a></p>
-          <p>Location: Lagos, Nigeria</p>
-        </div>
+        {/* Footer Info */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          className="mt-10 text-center space-y-2 text-gray-400"
+        >
+          <p>
+            <Phone size={16} className="inline mr-2" />
+            +234 706 552 0120
+          </p>
+
+          <p>
+            <MapPin size={16} className="inline mr-2" />
+            Lagos, Nigeria
+          </p>
+        </motion.div>
       </div>
     </section>
   );

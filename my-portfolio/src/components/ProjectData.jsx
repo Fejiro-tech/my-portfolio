@@ -9,6 +9,7 @@ import naijastyleImg from "../assets/fashionapp.png"
 import codebuddy from "../assets/mycodebuddy.png"
 import ordereatsImg from "../assets/ordereats.png"
 import veeslogisticsImg from "../assets/logistics.png"
+import scentoraImg from "../assets/scentora.png"
 
 const project = [
 
@@ -24,6 +25,18 @@ const project = [
   },
 
   {
+    name: "Scentora",
+    description:
+      "A modern full-stack perfume e-commerce platform featuring product management, inventory tracking, image uploads, featured and best-sellers collections, and a custom admin dashboard powered by Next.js and Supabase.",
+    url: "https://scentora-sandy.vercel.app/",
+    githubUrl: "https://github.com/Fejiro-tech/Scentora.git",
+    technologies: ["Nextjs | Supabase | Tailwind CSS"],
+    year: 2026,
+    image: scentoraImg,
+
+  },
+
+  {
       name: "TicketFlow",
       description:
         "TicketFlow is a responsive and efficient ticket management system that helps users create, track, and resolve tickets effortlessly.",
@@ -34,8 +47,22 @@ const project = [
       image: ticketflow,
   },
 
+  {
+    name: "Vee's Logistics",
+    description:
+      "A full-stack logistcs tracking platform with a user interface for real time shipment tracking and a powerful admin dashboard (shown in the image) for creating, updating, and managing shipments. Demonstrates responsive design, full-stack development, and real world business logic.",
+    url: "https://www.veeslogistics.com.ng",
+    githubUrl: "https://github.com/Fejiro-tech/veeslogistics.git",
+    technologies: ["Nextjs | Supabase | Tailwind CSS"],
+    year: 2026,
+    image: veeslogisticsImg,
+  },
+
+
+
+
     {
-    name: "OrderEats - Food Ordering App",
+    name: "OrderEats",
     description:
       "A scalable food ordering application built uising React, featuring dynamic routing and centralized cart state management with Context API. The app includes real-time cart updates, persistent storage via localStorage, and Paystack payment integration (test mode) for secure checkout simulation.",
     url: "https://ordereat.vercel.app",
@@ -45,16 +72,6 @@ const project = [
     image: ordereatsImg,
   },
 
-  {
-    name: "Vee's Logistics",
-    description:
-      "A full-stack logistcs tracking platform with a user interface for real time shipment tracking and a powerful admin dashboard (shown in the image) for creating, updating, and managing shipments. Demonstrates responsive design, full-stack development, and real world business logic.",
-    url: "https://www.veeslogistics.com.ng",
-    githubUrl: "https://github.com/Fejiro-tech/veeslogistics.git",
-    technologies: ["Nextjs | Supabase | Tailwind CSS"],
-    year: 2025,
-    image: veeslogisticsImg,
-  },
 
   {
     name: "CodeBuddy",
@@ -68,17 +85,18 @@ const project = [
 
   },
 
-  {
-    name: "Naija Style Co.",
-    description:
-      "Naija Style Co is a responsive Next.js fashion storefront showcasing Nigerian traditional and modern outfits. It features category-based browsing, dynamic product pages, size selection, and a cart system powered by React Context API. The UI is clean, fast, and fully optimized for mobile.",
-    url: "https://my-naija-style.vercel.app/",
-    githubUrl: "https://github.com/Fejiro-tech/NaijaStyle.git",
-    technologies: ["Nextjs | Tailwind CSS"],
-    year: 2025,
-    image: naijastyleImg,
 
-  },
+  // {
+  //   name: "Naija Style Co.",
+  //   description:
+  //     "Naija Style Co is a responsive Next.js fashion storefront showcasing Nigerian traditional and modern outfits. It features category-based browsing, dynamic product pages, size selection, and a cart system powered by React Context API. The UI is clean, fast, and fully optimized for mobile.",
+  //   url: "https://my-naija-style.vercel.app/",
+  //   githubUrl: "https://github.com/Fejiro-tech/NaijaStyle.git",
+  //   technologies: ["Nextjs | Tailwind CSS"],
+  //   year: 2025,
+  //   image: naijastyleImg,
+
+  // },
   // {
   //   name: "Crypto Live-Tracker",
   //   description:

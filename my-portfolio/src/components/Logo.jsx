@@ -1,7 +1,7 @@
 
 export default function Logo() {
   return (
-    <div className="flex  md:mr-10  ">
+    <div className="flex  md:mr-10 font-['Cormorant_Garamond'] ">
       <a href="#home">
         {/* Code Icon */}
         <span className="text-[#3b82f6] text-[18px] sm:text-[20px] md:text-[25px]  font-extrabold">

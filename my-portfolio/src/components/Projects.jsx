@@ -6,13 +6,13 @@ export default function Project() {
   return (
     <section
       id="projects" 
-      className="py-26 sm:px-8 md:px-12"
+      className="py-26 px-8 lg:px-10 font-['Cormorant_Garamond']"
     >
       <h1 className="text-2xl md:text-4xl font-extrabold text-center mb-8 text-white mt-8">
         My Projects
       </h1>
 
-      <p className="text-slate-300 text-center text-sm md:text-base leading-relaxed md:mt-8 sm:mt-1 mb-8">
+      <p className="text-slate-300 text-center text-sm md:text-base leading-relaxed md:mt-8 sm:mt-1 mb-8 font-sans">
         A look at my latest frontend work—where performance, accessibility, and
         visual polish come together seamlessly.
       </p>
@@ -34,10 +34,10 @@ export default function Project() {
             />
 
             <div className="p-2 md:p-4 flex flex-col flex-grow">
-              <h1 className="text-xl font-semibold mb-3 text-white">
+              <h1 className="text-base md:text-lg lg:text-xl font-semibold mb-3 text-white uppercase tracking-widest">
                 {name}
               </h1>
-              <p className="text-gray-300 flex-grow text-[12px] md:text-sm">{description}</p>
+              <p className="text-gray-400 flex-grow text-[12px] md:text-sm font-sans">{description}</p>
 
               <p className="text-gray-300 font-bold mt-6">{technologies}</p>
 

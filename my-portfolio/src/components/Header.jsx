@@ -34,7 +34,7 @@ export default function Header({}) {
   return (
   <div
   id="home"
-  className="flex items-center justify-center min-h-screen relative mt-10"
+  className="flex items-center justify-center min-h-screen relative mt-10 font-['Cormorant_Garamond']"
 >
   <div className="
       flex flex-col sm:flex-row 
@@ -58,30 +58,32 @@ export default function Header({}) {
       initial="hidden"
       animate="show"
     >
-      <motion.h1
-        className="text-white text-2xl sm:text-4xl md:text-5xl font-bold leading-tight"
-        variants={childVariants}
-      >
-        Hi👋,
-        <br />
-        <motion.span variants={childVariants}>I'm Priscillia,</motion.span>
-        <br />
-        <motion.span
-          variants={childVariants}
-          className="text-blue-400"
-        >
-          A Front-End Developer.
-        </motion.span>
+     <motion.h1
+  className="text-white text-2xl sm:text-4xl md:text-5xl font-bold leading-tight space-y-2"
+  variants={childVariants}
+>
+  <motion.span variants={childVariants} className="block">
+    Hi 👋,
+  </motion.span>
 
-        <br />
+  <motion.span variants={childVariants} className="block">
+    I'm Priscillia,
+  </motion.span>
 
-        <motion.span
-          variants={childVariants}
-          className="text-slate-300"
-        >
-          I craft clean interfaces & code
-        </motion.span>
-      </motion.h1>
+  <motion.span
+    variants={childVariants}
+    className="block text-blue-400"
+  >
+    A <span className="italic font-medium tracking-wide">Frontend</span> Developer.
+  </motion.span>
+
+  <motion.span
+    variants={childVariants}
+    className="block text-slate-300 text-base md:text-lg font-normal mt-2"
+  >
+    I craft clean interfaces & code.
+  </motion.span>
+</motion.h1>
 
       <motion.p
         className="text-[#a1a1a1] text-sm mt-6"

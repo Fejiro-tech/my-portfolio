@@ -13,7 +13,7 @@ export default function CustomButton() {
 
   return (
     <div className="flex">
-      <div className="flex ">
+      <div className="flex font-['Cormorant_Garamond']">
         {/* Hamburger Icon (Mobile Only) */}
         <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>

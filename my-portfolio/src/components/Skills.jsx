@@ -47,12 +47,12 @@ const items = {
 export default function Skills() {
   return (
     <div id="skills"  className="min-h-screen px-10 py-16 flex justify-center items-center">
-      <div className="w-full max-w-5xl py-12 md:py-20">
+      <div className="w-full max-w-5xl py-12 md:py-20 font-['Cormorant_Garamond']">
         <h1 className="text-white text-2xl md:text-4xl font-extrabold text-center ">
           Technologies & Tools
         </h1>
 
-        <p className="text-slate-300 text-center text-[14px] md:text-base leading-relaxed mt-8 md:mt-10 lg:mt-12">
+        <p className="text-slate-300 text-center text-[14px] md:text-base leading-relaxed mt-8 md:mt-10 lg:mt-12 font-sans">
           Here are some of the core tools and technologies I use to design, develop, and deploy responsive and
           scalable web applications.
         </p>
