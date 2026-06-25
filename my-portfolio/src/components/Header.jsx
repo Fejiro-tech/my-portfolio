@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { buttonStyle } from "./CustomButton.jsx";
 import icon from "../assets/arrow.svg";
 import ArrowIcon from "./ArrowIcon.jsx";
-import pic3 from "../assets/pic3.JPG";
+import pic3 from "../assets/pic3.jpg";
 import Resume from "./Resume.jsx";
 
 
