@@ -29,7 +29,7 @@ const fadeUp = {
 export default function Contact() {
   const [open, setOpen] = useState(false);
 
-  const whatsappNumber = "2347065520120";
+  const whatsappNumber = "2349080399604";
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     "Hi Priscillia, I came across your portfolio and would like to discuss a project."
