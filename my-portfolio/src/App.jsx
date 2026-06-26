@@ -34,7 +34,7 @@ function App() {
         ) : (
           <>
             <Nav />
-            <div className="bg-[#0A0A0A] backdrop-blur-md max-w-340 mx-auto">
+            <div className="bg-[#000000] backdrop-blur-md max-w-340 mx-auto">
               <Header />
               <About />
               <Skills />
