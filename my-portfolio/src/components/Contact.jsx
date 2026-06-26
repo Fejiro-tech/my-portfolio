@@ -105,7 +105,7 @@ export default function Contact() {
             Let's Work Together
           </h2>
 
-          <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto ">
+          <p className="text-[#D4D4D8] text-sm md:text-base leading-relaxed max-w-2xl mx-auto ">
             I'm available for freelance projects, frontend development
             opportunities, and collaborations. Feel free to reach out through
             any of the channels below.

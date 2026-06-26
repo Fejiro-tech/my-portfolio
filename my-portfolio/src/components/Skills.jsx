@@ -52,7 +52,7 @@ export default function Skills() {
           Technologies & Tools
         </h1>
 
-        <p className="text-slate-300 text-center text-[14px] md:text-base leading-relaxed mt-8 md:mt-10 lg:mt-12 font-sans">
+        <p className="text-[#D4D4D8] text-center text-[14px] md:text-base leading-relaxed mt-8 md:mt-10 lg:mt-12 font-sans">
           Here are some of the core tools and technologies I use to design, develop, and deploy responsive and
           scalable web applications.
         </p>
@@ -63,7 +63,7 @@ export default function Skills() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 rounded-xl shadow-lg mt-6 group p-4  bg-blue-400/20 backdrop-blur-lg border border-blue-400/20 text-white"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 rounded-xl shadow-lg mt-6 group p-4  bg-slate-800/40 backdrop-blur-lg border border-blue-400/20 text-white"
         >
           {tech.map((item, index) => (
             // Outer div handles hidden / group-hover logic
@@ -72,7 +72,7 @@ export default function Skills() {
                 variants={items}
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.2, ease: "easeInOut" }}
-                className="flex flex-col items-center gap-2 bg-blue-400/5 p-5 rounded-xl shadow-lg hover:shadow-blue-400/30 w-full"
+                className="flex flex-col items-center gap-2 bg-slate-900/20 p-5 rounded-xl shadow-lg hover:shadow-blue-400/10 w-full"
               >
                 {item.icon}
                 <span className="text-sm text-white mt-4">{item.name}</span>

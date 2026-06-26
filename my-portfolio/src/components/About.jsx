@@ -23,7 +23,7 @@ const About = () => {
             Meet the Developer
           </h1>{" "}
           <br />
-          <p className="text-slate-300 text-[14px] md:text-base leading-relaxed mt-4 font-sans">
+          <p className="text-[#D4D4D8] text-[14px] md:text-base leading-relaxed mt-4 font-sans">
             Hi! I'm Priscillia Osumaka, a passionate Frontend Web Developer with
             a strong focus on creating clean, responsive, and user-centric web
             applications. I hold a B.Sc. in Political Science, but my true
@@ -46,7 +46,7 @@ const About = () => {
             Fun Facts
           </h1>
          
-          <ul className="text-slate-300 text-[14px] md:text-base list-disc pl-6 space-y-2 font-sans">
+          <ul className="text-[#D4D4D8] text-[14px] md:text-base list-disc pl-6 space-y-2 font-sans">
             <li>
               🎓 I studied Political Science, but found my true passion in
               coding and design.

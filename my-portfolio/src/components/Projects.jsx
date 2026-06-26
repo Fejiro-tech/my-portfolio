@@ -85,7 +85,7 @@ export default function Project() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="text-slate-300 text-center text-sm md:text-base leading-relaxed md:mt-8 sm:mt-1 mb-8 font-sans"
+        className="text-[#D4D4D8] text-center text-sm md:text-base leading-relaxed md:mt-8 sm:mt-1 mb-8 font-sans"
       >
         A look at my latest frontend work—where performance,
         accessibility, and visual polish come together seamlessly.
